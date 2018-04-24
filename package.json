@@ -1,0 +1,25 @@
+{
+  "name": "aboutme",
+  "version": "1.0.0",
+  "description": "A descriptive web to improve my coding skills",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevenAnaya/AboutME.git"
+  },
+  "keywords": [
+    "AboutMe",
+    "Improve",
+    "Enhance"
+  ],
+  "author": "StevenAnaya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StevenAnaya/AboutME/issues"
+  },
+  "homepage": "https://github.com/StevenAnaya/AboutME#readme"
+}
