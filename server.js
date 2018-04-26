@@ -4,7 +4,7 @@ let express = require('express')
 let server = express()
 let port = 8080
 
-server.use(express.static('styles'))
+server.use(express.static('public'))
 server.set('views', './views')
 server.set('view engine', 'pug')
 
