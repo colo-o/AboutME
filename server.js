@@ -9,11 +9,11 @@ server.set('views', './views')
 server.set('view engine', 'pug')
 
 server.get('/', (req, res) => {
-  res.render('index', { title: 'Mi Aplicacion con PUG', message: 'Hola desde un motor de templates' })
+  res.render('index')
 })
 
 server.get('*', (req, res) => {
-  res.status(404).send('<h2 style="color: red;">No Encontramos lo que estas buscando</h2>')
+  res.redirect('/')
 })
 
 server.listen(port, () => {
