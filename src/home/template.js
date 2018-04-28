@@ -2,5 +2,7 @@
 
 let yo = require('yo-yo')
 
-module.exports = yo`<div> <h1>Hola desde yo-yo</h1> 
-<a href="/perro">Perro</a> </div>`
+module.exports = yo`<div class="main-box bord">
+  <div class="box-internal bord">
+  </div>
+</div>`

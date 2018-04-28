@@ -1,4 +1,48 @@
-h1 {
-  color: red;
-  font-size: 60px;
+.main-box{
+  width: 100vw;
+  height: 100vh;
+}
+
+.box-internal{
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+}
+
+.bord{
+  border: 1px solid red;
+}
+
+
+/* Mediaquerie's Breakpoints */
+
+/* Extra Small Devices */
+@media (max-width: 576.98px) {
+  .bord {
+    border:1px solid black;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .bord{
+    border: 1px solid brown;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bord{
+    border: 1px solid blue;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .bord{
+    border: 1px solid green;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .bord{
+    border: 1px solid yellow;
+  }
 }
