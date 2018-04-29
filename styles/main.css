@@ -1,12 +1,29 @@
-.main-box{
-  width: 100vw;
-  height: 100vh;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.box-internal{
+#scroll-container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slides{
   width: 100%;
   height: 100%;
+  position: absolute;
+}
+
+.home{
   background-color: #161616;
+}
+
+.graphic{
+  background-color: #AC1F17;
+}
+
+.develop{
+  background-color: #0C102E;
 }
 
 .bord{

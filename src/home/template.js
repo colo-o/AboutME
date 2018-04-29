@@ -2,7 +2,11 @@
 
 let yo = require('yo-yo')
 
-module.exports = yo`<div class="main-box bord">
-  <div class="box-internal bord">
-  </div>
+module.exports = yo`<div id="scroll-container">
+  <section class="slides home">
+  </section>
+  <section class="slides graphic">
+  </section>
+  <section class="slides develop">
+  </section>
 </div>`
