@@ -14,16 +14,31 @@ body::-webkit-scrollbar {
   position: absolute;
 }
 
-.home{
+.home, .gaming{
   background-color: #161616;
 }
 
 .graphic{
-  background-color: #AC1F17;
+  background: url(./design.jpg) #AC1F17;
+  background-size: cover;
 }
 
 .develop{
   background-color: #0C102E;
+}
+
+.social-icons{
+  position: fixed;
+  top: 92%;
+  left: 3%;
+  width: 6%;
+}
+
+.flag-icons{
+  position: fixed;
+  top: 92.5%;
+  right: 3%;
+  width: 4%;
 }
 
 .bord{
