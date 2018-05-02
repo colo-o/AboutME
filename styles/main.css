@@ -2,6 +2,16 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
 #scroll-container{
   width: 100vw;
   height: 100vh;

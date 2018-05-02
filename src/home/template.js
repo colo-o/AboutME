@@ -6,6 +6,7 @@ module.exports = yo`<div>
   <div id="scroll-container">
     <section class="slides home">
       <h1>STEVEN ANAYA</h1>
+      <p>La mejor prueba de todas</p>
       <button id="next">SIguiente</button>
     </section>
     <section class="slides graphic">
