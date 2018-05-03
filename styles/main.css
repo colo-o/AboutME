@@ -12,49 +12,22 @@ p{
   font-weight: 400;
 }
 
-#scroll-container{
+.grid-container{
+  display: grid;
+  grid-template-columns: [I-C] .4fr [F-social-I-middle-C] 2fr [F-middle-I-menu-C] .4fr [F-C];
+  grid-template-rows: [I-R] .2fr [F-menu-I-middle-R] 2fr [F-middle-I-social-R] .2fr [F-R];
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 
-.slides{
-  width: 100%;
-  height: 100%;
-  position: absolute;
+.menu{
+  grid-area: I-R / I-C / F-menu-I-middle-R / F-C;
 }
 
-.home, .gaming{
-  background-color: #161616;
+.grid{
+  border: 1px solid lightcoral;
+  background-color: lightblue;
 }
-
-.graphic{
-  background: url(./design.jpg) #AC1F17;
-  background-size: cover;
-}
-
-.develop{
-  background-color: #0C102E;
-}
-
-.social-icons{
-  position: fixed;
-  top: 92%;
-  left: 3%;
-  width: 6%;
-}
-
-.flag-icons{
-  position: fixed;
-  top: 92.5%;
-  right: 3%;
-  width: 4%;
-}
-
-.bord{
-  border: 1px solid red;
-}
-
 
 /* Mediaquerie's Breakpoints */
 
