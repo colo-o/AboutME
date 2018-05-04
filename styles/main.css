@@ -29,6 +29,22 @@ p{
   background-color: lightblue;
 }
 
+.slide-left{
+  grid-area: F-menu-I-middle-R / I-C / F-middle-I-social-R / F-social-I-middle-C;
+}
+
+.central-content{
+  grid-area: F-menu-I-middle-R / F-social-I-middle-C / F-middle-I-social-R / F-middle-I-menu-C;
+}
+
+.slide-right{
+  grid-area: F-menu-I-middle-R / F-middle-I-menu-C / F-middle-I-social-R / F-C;
+}
+
+.footer{
+  grid-area: F-middle-I-social-R / I-C / F-R / F-C;
+}
+
 /* Mediaquerie's Breakpoints */
 
 /* Extra Small Devices */
