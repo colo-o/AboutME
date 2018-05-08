@@ -11,11 +11,11 @@ module.exports = function scene (){
     .fromTo("section.slides.gaming", 10, { y: "100% "}, { y: "0%", ease: Linear.easeNone, delay: 3 })
 
   new ScrollMagic.Scene({
-    triggerElement: "#scroll-container",
+    triggerElement: "#scroll",
     triggerHook: "onLeave",
     duration: "300%"
   })
-  .setPin("#scroll-container")
+  .setPin("#scroll")
   .setTween(wipeAnimation)
   .addIndicators()
   .addTo(controller)
