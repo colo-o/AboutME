@@ -12,6 +12,96 @@ p {
   font-weight: 400;
 }
 
+#super-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  justify-items: end;
+  align-items: center;
+  z-index: 10;
+}
+
+.header-menu {
+  margin-right: 50px;
+}
+
+.slide-buttons {
+  position: fixed;
+  left: 0;
+  top: 40%;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.slide-buttons-left {
+  margin-left: 60px;
+}
+
+.slide-buttons-right {
+  margin-right: 60px;
+}
+
+.main-content {
+  height: 100%;
+  width: 100%;
+  perspective: 300px;
+}
+
+.main-content-home {
+  background-color: #AC1F17;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main-content-scroll {
+  width: 50%;
+  height: 130%;
+  position: absolute;
+  top: 100%;
+  left: 13%;
+  background: #AC1F17;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10%;
+  display: grid;
+  grid-template-columns: 90px 90px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.footer-social {
+  width: 80px;
+}
+
+.footer-langs {
+  width: 60px;
+}
+
+.bord {
+  border: 1px solid red;
+}
+
 
 /* Mediaquerie's Breakpoints */
 
