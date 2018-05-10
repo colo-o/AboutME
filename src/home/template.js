@@ -1,9 +1,12 @@
 'use strict'
 
 let yo = require('yo-yo')
-let logoTemplate = require('./assetsTemplates/logoTemplate')
-let socialTemplate = require('./assetsTemplates/socialTemplate')
-let langsTemplate = require('./assetsTemplates/langsTemplates')
+let behanceIcon = require('../../yo-svgs/behance-icon')
+let facebookIcon = require('../../yo-svgs/facebook-icon')
+let githubIcon = require('../../yo-svgs/github-icon')
+let colombianFlag = require('../../yo-svgs/colombian-flag')
+let americanFlag = require('../../yo-svgs/american-flag')
+
 
 module.exports = yo`<div id="super-container">
   <header class="header bord">
@@ -27,10 +30,13 @@ module.exports = yo`<div id="super-container">
   </section>
   <footer class="footer bord">
     <div class="footer-social">
-      ${socialTemplate}
+      <a href="#">${githubIcon}</a>
+      <a href="#">${facebookIcon}</a>
+      <a href="#">${behanceIcon}</a>
     </div>
     <div class="footer-langs">
-      ${langsTemplate}
+      <a href="#">${colombianFlag}</a>
+      ${americanFlag}
     </div>
   </footer>
 </div>
