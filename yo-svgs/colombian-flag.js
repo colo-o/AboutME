@@ -2,21 +2,4 @@
 
 let yo = require('yo-yo')
 
-module.exports= yo`<svg version="1.1"
-xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-x="0px" y="0px" width="300px" height="200px" viewBox="0 0 300 200" style="enable-background:new 0 0 300 200;"
-xml:space="preserve">
-<style type="text/css">
-.st0-colombian-flag{fill:#FCD116;}
-.st1-colombian-flag{fill:#003893;}
-.st2-colombian-flag{fill:#CE1126;}
-</style>
-<defs>
-</defs>
-<g id="Colombia_1_">
-<rect id="Yellow_1_" class="st0-colombian-flag" width="300" height="104.8"/>
-<rect id="Blue_1_" y="104.8" class="st1-colombian-flag" width="300" height="47.6"/>
-<rect id="Red_1_" y="152.4" class="st2-colombian-flag" width="300" height="47.6"/>
-</g>
-</svg>
-`
+module.exports= yo`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="24px" height="25px"><defs><style>.cls-1-colombian-flag{fill:#fcd116;}.cls-2-colombian-flag{fill:#003893;}.cls-3-colombian-flag{fill:#ce1126;}</style></defs><title>colombian-flag</title><g id="Capa_2" data-name="Capa 2"><g id="iCONS"><g id="Colombia"><rect id="Yellow" class="cls-1-colombian-flag" width="300" height="104.82"/><rect id="Blue" class="cls-2-colombian-flag" y="104.82" width="300" height="47.59"/><rect id="Red" class="cls-3-colombian-flag" y="152.41" width="300" height="47.59"/></g></g></g></svg>`

@@ -6,18 +6,24 @@ let facebookIcon = require('../../yo-svgs/facebook-icon')
 let githubIcon = require('../../yo-svgs/github-icon')
 let colombianFlag = require('../../yo-svgs/colombian-flag')
 let americanFlag = require('../../yo-svgs/american-flag')
+let leftButton = require('../../yo-svgs/left-button')
+let rightButton = require('../../yo-svgs/right-button')
 
 
 module.exports = yo`<div id="super-container">
   <header class="header bord">
-    <div class="header-menu">Menu</div>
+    <div class="header-menu">
+      <p class="header-menu-burger"></p>
+      <p class="header-menu-burger"></p>
+      <p class="header-menu-burger"></p>
+    </div>
   </header>
   <section class="slide-buttons bord">
     <div class="slide-buttons-left bord">
-      left
+      ${leftButton}
     </div>
     <div class="slide-buttons-right bord">
-      right
+      ${rightButton}
     </div>
   </section>
   <section class="main-content bord">
@@ -30,13 +36,13 @@ module.exports = yo`<div id="super-container">
   </section>
   <footer class="footer bord">
     <div class="footer-social">
-      <a href="#">${githubIcon}</a>
-      <a href="#">${facebookIcon}</a>
-      <a href="#">${behanceIcon}</a>
+      <a href="#" class="footer-icon" target="_blank">${githubIcon}</a>
+      <a href="#" class="footer-icon" target="_blank">${facebookIcon}</a>
+      <a href="#" class="footer-icon" target="_blank">${behanceIcon}</a>
     </div>
     <div class="footer-langs">
-      <a href="#">${colombianFlag}</a>
-      ${americanFlag}
+      <a href="#" class="footer-icon">${colombianFlag}</a>
+      <a href="#" class="footer-icon">${americanFlag}</a>
     </div>
   </footer>
 </div>

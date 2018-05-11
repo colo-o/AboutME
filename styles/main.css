@@ -10,6 +10,7 @@ h1 {
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  margin: 0;
 }
 
 #super-container {
@@ -36,10 +37,20 @@ p {
   margin-right: 50px;
 }
 
+.header-menu-burger {
+  width:27px;
+  border: .5px solid #fff;
+}
+
+.header-menu-burger:nth-of-type(1), 
+.header-menu-burger:nth-of-type(2) {
+  margin-bottom: 5px;
+}
+
 .slide-buttons {
   position: fixed;
   left: 0;
-  top: 40%;
+  top: 45%;
   height: 10%;
   width: 100%;
   display: flex;
@@ -48,11 +59,11 @@ p {
 }
 
 .slide-buttons-left {
-  margin-left: 60px;
+  margin-left: 50px;
 }
 
 .slide-buttons-right {
-  margin-right: 60px;
+  margin-right: 50px;
 }
 
 .main-content {
@@ -87,15 +98,36 @@ p {
   grid-template-columns: 90px 90px;
   justify-content: space-between;
   align-items: center;
+  margin: 0 50px 0 50px;
   z-index: 10;
 }
 
+/* .footer-icon {
+  width: 22px;
+  height: 22px;
+} */
+
 .footer-social {
   width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-social .footer-icon:nth-of-type(3) {
+  padding-top: 4px;
 }
 
 .footer-langs {
   width: 60px;
+  justify-self: end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.footer-langs .footer-icon:nth-of-type(2) {
+  margin-left: 10px;
 }
 
 .bord {
