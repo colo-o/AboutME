@@ -37,14 +37,26 @@ p {
   margin-right: 50px;
 }
 
+.header-menu-toggle {
+  cursor: pointer;
+}
+
 .header-menu-burger {
-  width:27px;
+  width: 40px;
   border: .5px solid #fff;
 }
 
 .header-menu-burger:nth-of-type(1), 
 .header-menu-burger:nth-of-type(2) {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+}
+
+.header-menu-burger:nth-of-type(2) {
+  width: 33px !important;
+}
+
+.header-menu-burger:nth-of-type(3) {
+  width: 24px !important
 }
 
 .slide-buttons {

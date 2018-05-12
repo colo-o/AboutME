@@ -13,9 +13,11 @@ let rightButton = require('../../yo-svgs/right-button')
 module.exports = yo`<div id="super-container">
   <header class="header bord">
     <div class="header-menu">
-      <p class="header-menu-burger"></p>
-      <p class="header-menu-burger"></p>
-      <p class="header-menu-burger"></p>
+      <div class="header-menu-toggle">
+        <p class="header-menu-burger"></p>
+        <p class="header-menu-burger"></p>
+        <p class="header-menu-burger"></p>
+      </div>
     </div>
   </header>
   <section class="slide-buttons bord">
@@ -36,9 +38,9 @@ module.exports = yo`<div id="super-container">
   </section>
   <footer class="footer bord">
     <div class="footer-social">
-      <a href="#" class="footer-icon" target="_blank">${githubIcon}</a>
-      <a href="#" class="footer-icon" target="_blank">${facebookIcon}</a>
-      <a href="#" class="footer-icon" target="_blank">${behanceIcon}</a>
+      <a href="https://github.com/StevenAnaya" class="footer-icon" target="_blank">${githubIcon}</a>
+      <a href="https://www.behance.net/stvanaya50fe" class="footer-icon" target="_blank">${facebookIcon}</a>
+      <a href="https://www.facebook.com/Stvanaya" class="footer-icon" target="_blank">${behanceIcon}</a>
     </div>
     <div class="footer-langs">
       <a href="#" class="footer-icon">${colombianFlag}</a>
