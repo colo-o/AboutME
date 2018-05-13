@@ -82,13 +82,30 @@ p {
   height: 100%;
   width: 100%;
   perspective: 300px;
+  overflow: hidden;
 }
 
-.main-content-home {
-  background-color: #AC1F17;
-  width: 100%;
+.main-content-panel {
   height: 100%;
+  width: 100%;
+  position: absolute;
   z-index: -1;
+}
+
+.home {
+  background-color: #161616;
+}
+
+.design {
+  background-color: #AC1F17;
+}
+
+.develop {
+  background-color: #0C102E;
+}
+
+.gaming {
+  background-color: #161616;
 }
 
 .main-content-scroll {
