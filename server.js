@@ -1,8 +1,8 @@
 'use strict'
 
-let express = require('express')
-let server = express()
-let port = 8080
+const express = require('express')
+const server = express()
+const port = 8080
 
 server.use(express.static('public'))
 server.set('views', './views')

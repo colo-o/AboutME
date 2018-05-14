@@ -1,8 +1,8 @@
 'use strict'
 
-let page = require('page')
+const page = require('page')
 
 require('./home')
-require('./notFound')
+require('./not-found')
 
 page()

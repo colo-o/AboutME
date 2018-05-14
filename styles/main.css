@@ -83,29 +83,46 @@ p {
   width: 100%;
   perspective: 300px;
   overflow: hidden;
+  position: relative;
 }
 
 .main-content-panel {
   height: 100%;
   width: 100%;
   position: absolute;
-  z-index: -1;
 }
+
+/* .slide-animations {
+  animation-name: slide-in;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.3, .77, .66, .98);
+  animation-fill-mode: forwards;
+} */
 
 .home {
   background-color: #161616;
+  z-index: 1;
 }
 
 .design {
   background-color: #AC1F17;
+  left: 100%;
+  top: 0;
+  z-index: 2;
 }
 
 .develop {
   background-color: #0C102E;
+  z-index: 3;
+  left: 100%;
+  top: 0;
 }
 
 .gaming {
   background-color: #161616;
+  z-index: 4;
+  left: 100%;
+  top: 0;
 }
 
 .main-content-scroll {
@@ -163,6 +180,14 @@ p {
   border: 1px solid red;
 }
 
+/* Keyframes animations */
+
+@keyframes slide-in {
+  from {}
+  to {
+    left: 0%;
+  }
+}
 
 /* Mediaquerie's Breakpoints */
 

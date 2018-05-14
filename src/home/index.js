@@ -1,9 +1,10 @@
 'use strict'
 
-let page = require('page')
-let template = require('./template')
-let empty = require('empty-element')
-let scene = require('./scrollAnimations')
+const page = require('page')
+const template = require('./template')
+const empty = require('empty-element')
+require('../animations/slides-animations')
+
 
 
 page('/', function () {
