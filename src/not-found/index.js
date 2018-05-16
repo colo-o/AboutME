@@ -5,6 +5,6 @@ let empty = require('empty-element')
 let template = require('./template')
 
 page('*', function () {
-  let main = document.getElementById('main-container')
+  let main = document.getElementById('super-container')
   empty(main).appendChild(template)
 })

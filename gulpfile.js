@@ -10,7 +10,7 @@ let buffer = require('vinyl-buffer')
 let minicss = require('gulp-minify-css')
 
 gulp.task('scripts', function () {
-  browserify('./src/main.js')
+  browserify('./src/index.js')
     .transform(babel, { presets: ["es2015"] })
     .bundle()
     .pipe(source('index.js'))

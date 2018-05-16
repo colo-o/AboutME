@@ -3,12 +3,10 @@
 const page = require('page')
 const template = require('./template')
 const empty = require('empty-element')
-require('../animations/slides-animations')
-
-
+require('./animations/slides/slides-animations')
 
 page('/', function () {
-  let main = document.getElementById('main-container')
+  let main = document.getElementById('super-container')
   empty(main).appendChild(template)
   // scene()
 })

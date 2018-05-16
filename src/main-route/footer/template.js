@@ -1,11 +1,11 @@
 'use strict'
 
 let yo = require('yo-yo')
-let githubIcon = require('../../yo-svgs/github-icon')
-let facebookIcon = require('../../yo-svgs/facebook-icon')
-let behanceIcon = require('../../yo-svgs/behance-icon')
-let colombianFlag = require('../../yo-svgs/colombian-flag')
-let americanFlag = require('../../yo-svgs/american-flag')
+let githubIcon = require('../../../yo-svgs/github-icon')
+let facebookIcon = require('../../../yo-svgs/facebook-icon')
+let behanceIcon = require('../../../yo-svgs/behance-icon')
+let colombianFlag = require('../../../yo-svgs/colombian-flag')
+let americanFlag = require('../../../yo-svgs/american-flag')
 
 module.exports = yo`
 <footer class="footer bord">
