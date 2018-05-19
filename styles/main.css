@@ -1,6 +1,6 @@
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -9,8 +9,9 @@ h1 {
 
 p {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
+  font-size: 21px;
 }
 
 #super-container {
@@ -152,11 +153,21 @@ p {
   z-index: 2;
 }
 
+.design-scroll {
+  top: 50%;
+  left: 3%;
+}
+
 .develop {
   background-color: #0C102E;
   z-index: 3;
   left: 100%;
   top: 0;
+}
+
+.develop-scroll {
+  right: 3%;
+  top: -80%;
 }
 
 .gaming {
@@ -166,13 +177,22 @@ p {
   top: 0;
 }
 
+.gaming-scroll {
+  left: 100%;
+  top: 15%;
+}
+
 .main-content-scroll {
-  width: 50%;
-  height: 130%;
+  width: 75%;
+  height: 80%;
   position: absolute;
-  top: 100%;
-  left: 13%;
-  background: #AC1F17;
+  background: #ffffff;
+}
+
+.main-content-text {
+  width: 70%;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .footer {
