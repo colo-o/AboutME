@@ -5,6 +5,7 @@ const template = require('./template')
 const empty = require('empty-element')
 require('./animations/slides/slides-animations')
 require('./animations/scroll/scroll-events')
+require('./tools/hide-scroll')
 
 page('/', function () {
   let main = document.getElementById('super-container')
