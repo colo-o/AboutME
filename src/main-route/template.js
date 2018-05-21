@@ -7,7 +7,7 @@ const sideButtons = require('./side-buttons/template')
 const content = require('./content/template')
 
 module.exports = yo`
-<div>
+<div class="yo-wrap-container">
   ${header}
   ${sideButtons}
   ${content}
