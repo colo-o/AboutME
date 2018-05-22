@@ -3,6 +3,7 @@
 const slides = ['home', 'design', 'develop', 'gaming']
 let targetString
 let targetIndex
+let previousTarget
 
 function calcPosition (currentPosition, isForward) {
   let currentSlideIndex = findPositionIndex(currentPosition)
