@@ -144,7 +144,7 @@ p {
 }
 
 .home {
-
+  overflow: hidden;
 }
 
 .design {
@@ -186,7 +186,6 @@ p {
   height: 80%;
   background: #fff;
   position: absolute;
-  top: 90%;
 }
 
 .footer {
