@@ -4,7 +4,6 @@ const page = require('page')
 const template = require('./template')
 const empty = require('empty-element')
 require('./animations/slides/slides-animations')
-require('./animations/scroll/scroll-events')
 // require('./tools/hide-scroll')
 
 page('/', function () {

@@ -1,20 +1,24 @@
 'use strict'
 
+const moveCard = require('./scroll-animation/animation')
+
 $().ready(function () {
-  let viewportHeight = $(window).height()
-  let offsetClient = 0
-  let $scroll = $('#scroll-des')
-  console.log(viewportHeight)
+  let $scrollDesign = $('#scroll-des')
+  let $scrollDevelop = $('#scroll-dev')
+  let $scrollGaming = $('#scroll-gam')
 
-  $( window ).resize(function() {
-    viewportHeight = $(window).height()
-    console.log(viewportHeight);
-  });
+  $scrollDesign.scroll(function (ev) {
+    $(`section.main-content-scroll.design-scroll`).css({ "background": "black" })
+    moveCard(ev)
+  })
 
-  $scroll.scroll(function (ev) {
-    let $slide = $('.slide-buttons').attr('current-pos')
-    let $top = $(`section.main-content-scroll.${$slide}-scroll`).css("top")
-    console.log(`${$slide} este del scroll`)
-    console.log($top)
+  $scrollDevelop.scroll(function (ev) {
+    $(`section.main-content-scroll.develop-scroll`).css({ "background": "black" })
+    moveCard(ev)
+  })
+
+  $scrollGaming.scroll(function (ev) {
+    $(`section.main-content-scroll.gaming-scroll`).css({ "background": "black" })
+    moveCard(ev)
   })
 })

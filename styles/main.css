@@ -186,6 +186,9 @@ p {
   height: 80%;
   background: #fff;
   position: absolute;
+  top: 90%;
+  transition: .4s;
+  transition-timing-function: ease-in;
 }
 
 .footer {
