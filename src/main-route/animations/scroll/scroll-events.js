@@ -9,16 +9,17 @@ $().ready(function () {
 
   $scrollDesign.scroll(function (ev) {
     $(`section.main-content-scroll.design-scroll`).css({ "background": "black" })
-    moveCard(ev)
+    moveCard({ ev, currentTarget: "design"})
+    console.log(ev)
   })
 
   $scrollDevelop.scroll(function (ev) {
     $(`section.main-content-scroll.develop-scroll`).css({ "background": "black" })
-    moveCard(ev)
+    moveCard({ ev, currentTarget: "develop"})
   })
 
   $scrollGaming.scroll(function (ev) {
     $(`section.main-content-scroll.gaming-scroll`).css({ "background": "black" })
-    moveCard(ev)
+    moveCard({ ev, currentTarget: "gaming"})
   })
 })

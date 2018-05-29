@@ -1,9 +1,10 @@
 'use strict'
 
-let scrollOffset = 0
+const calcPercent = require('./calc-percent/calc-percent')
 
-function moveCard (ev) {
-  console.log(ev)
+function moveCard (args) {
+  let { ev, currentTarget } = args
+  calcPercent(ev.currentTarget.children[1].offsetTop, currentTarget)
 }
 
 module.exports = moveCard
