@@ -1,12 +1,14 @@
-/* body::-webkit-scrollbar {
-  display: none;
-} */
+:root {
+  --bg-black-color: #161616;
+  --bg-red-color: #AC1F17;
+  --bg-blue-color: #0C102E;
+}
 
 body {
   width: 100vw;
   height: 100vh;
   /* overflow-x: hidden; */
-  background: #161616;
+  background: var(--bg-black-color);
 }
 
 h1 {
@@ -148,19 +150,19 @@ p {
 }
 
 .design {
-  background: #AC1F17;
+  background: var(--bg-red-color);
   top: 0%;
   left: 100%;
 }
 
 .develop {
-  background: #0C102E;
+  background: var(--bg-blue-color);
   top: 0%;
   left: 100%;
 }
 
 .gaming {
-  background: #161616;
+  background: var(--bg-black-color);
   top: 0%;
   left: 100%;
 }
@@ -276,7 +278,7 @@ p {
 }
 
 .home {
-  background-color: #161616;
+  background-color: var(--bg-black-color);
   z-index: 1;
 }
 
@@ -285,7 +287,7 @@ p {
 }
 
 .design {
-  background-color: #AC1F17;
+  background-color: var(--bg-red-color);
   left: 100%;
   top: 0;
   z-index: 2;
@@ -297,7 +299,7 @@ p {
 }
 
 .develop {
-  background-color: #0C102E;
+  background-color: var(--bg-blue-color);
   z-index: 3;
   left: 100%;
   top: 0;
