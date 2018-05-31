@@ -7,7 +7,7 @@ function animationPipe (args) {
   let { ev, scrollValue, currentTarget } = args
   let direction = scrollDirection(scrollValue, currentTarget)
   animationMove(direction, currentTarget)
-  console.log(direction)
+  // console.log(direction)
 }
 
 module.exports = animationPipe

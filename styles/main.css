@@ -188,8 +188,8 @@ p {
   height: 80%;
   background: #fff;
   position: absolute;
-  top: 90%;
-  transition: .4s;
+  top: 100%;
+  transition: 0.5ms;
   transition-timing-function: ease-in;
 }
 

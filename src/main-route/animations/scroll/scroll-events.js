@@ -10,19 +10,19 @@ $().ready(function () {
 
   $scrollDesign.scroll(function (ev) {
     scrollValue = $scrollDesign.scrollTop()
-    console.log(scrollValue)
+    // console.log(scrollValue)
     animationPipe({ ev, scrollValue, currentTarget: "design"})
   })
 
   $scrollDevelop.scroll(function (ev) {
     scrollValue = $scrollDevelop.scrollTop()
-    console.log(scrollValue)
+    // console.log(scrollValue)
     animationPipe({ ev, scrollValue, currentTarget: "develop"})
   })
 
   $scrollGaming.scroll(function (ev) {
     scrollValue = $scrollGaming.scrollTop()
-    console.log(scrollValue)
+    // console.log(scrollValue)
     animationPipe({ ev, scrollValue, currentTarget: "gaming"})
   })
 })
