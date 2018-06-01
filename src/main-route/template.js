@@ -5,14 +5,14 @@ const header = require('./header/template')
 const footer = require('./footer/template')
 const sideButtons = require('./side-buttons/template')
 const content = require('./content/template')
-require('./animations/scroll/scroll-events')
-
+const secretCard = require('./card-button/template')
 
 module.exports = yo`
-<div class="yo-wrap-container">
-  ${header}
-  ${sideButtons}
-  ${content}
-  ${footer}
-</div>
+  <div class="yo-wrap-container">
+    ${header}
+    ${sideButtons}
+    ${content}
+    ${secretCard}
+    ${footer}
+  </div>
 `

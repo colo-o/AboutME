@@ -189,8 +189,22 @@ p {
   background: #fff;
   position: absolute;
   top: 100%;
-  transition: 0.5ms;
-  transition-timing-function: ease-in;
+  /* transition: 0.1ms;
+  transition-timing-function: ease-in; */
+}
+
+.card-btn-container {
+  position: fixed;
+  top: 60%;
+}
+
+.card-btn-container {
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(.4);
+  -webkit-transform: scale(.4);
+  -ms-transform: scale(.4);
+  -moz-transform: scale(.4);
 }
 
 .footer {
@@ -205,7 +219,7 @@ p {
 }
 
 .footer-social {
-  width: 80px;
+  width: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
