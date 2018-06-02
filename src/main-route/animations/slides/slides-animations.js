@@ -8,13 +8,13 @@ $().ready(function () {
   // previous button function animation
   $('#backward').click(function (ev) {
     $currentSlide = $('.slide-buttons').attr('current-pos')
-    console.log($currentSlide)
+    // console.log($currentSlide)
     moveSlide($currentSlide, false)
   })
   // next button function animation
   $('#forward').click(function (ev) {
     $currentSlide = $('.slide-buttons').attr('current-pos')
-    console.log($currentSlide)
+    // console.log($currentSlide)
     moveSlide($currentSlide, true)
   })
 })
