@@ -5,6 +5,23 @@
   --bg-white-color: #ffffff;
 }
 
+/* utility classes */
+.red {
+  color: var(--bg-red-color);
+}
+
+.blue {
+  color: var(--bg-blue-color);
+}
+
+.black {
+  color: var(--bg-black-color);
+}
+
+.white {
+  color: var(--bg-white-color);
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -121,7 +138,7 @@ p {
   position: fixed;
   display: flex;
   align-items: center;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .visibility-container {
@@ -186,10 +203,28 @@ p {
 
 .main-content-scroll {
   width: 70%;
-  height: 80%;
+  height: 100%;
   background: #fff;
   position: absolute;
   top: 100%;
+  transition: .8s;
+  padding: 2.5% 2% 2.5% 2%;
+  box-shadow: 0px 0px 15px 1px;
+}
+
+.title-size {
+  width: 50%;
+  margin-top: 5px;
+}
+
+.text-title {
+  text-transform: uppercase;
+  font-size: 62px;
+}
+
+.body-size {
+  width: 55%;
+  margin-top: 30px;
 }
 
 .card-btn-container {
@@ -197,6 +232,8 @@ p {
   top: 82%;
   left: 15%;
   transition: .5s;
+  display: inline-flex;
+  align-items: center;
 }
 
 .card-is-hide {
@@ -211,11 +248,11 @@ p {
 .btn-wrap {
   width: 40px;
   height: 40px;
-  border: 1px solid red;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .a-circle-btn {
@@ -228,6 +265,10 @@ p {
   -webkit-animation: card-btn-ext 1.5s cubic-bezier(.77, .36, .64, .97) infinite alternate;
   -moz-animation: card-btn-ext 1.5s cubic-bezier(.77, .36, .64, .97) infinite alternate;
   -o-animation: card-btn-ext 1.5s cubic-bezier(.77, .36, .64, .97) infinite alternate;
+}
+
+.btn-advice {
+  margin-left: 5px;
 }
 
 .btn-advice p {
