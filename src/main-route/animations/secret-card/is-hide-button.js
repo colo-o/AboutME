@@ -1,6 +1,6 @@
 'use strict'
 
-function isHide (currentSlide) {
+function isHideButton (currentSlide) {
   let $card = $('#secret')
   if(currentSlide != "home") {
     $card.hasClass('card-is-hide') ? $card.removeClass('card-is-hide') : false
@@ -9,4 +9,4 @@ function isHide (currentSlide) {
   }
 }
 
-module.exports = isHide
+module.exports = isHideButton

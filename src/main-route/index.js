@@ -3,7 +3,7 @@
 const page = require('page')
 const template = require('./template')
 const empty = require('empty-element')
-require('./animations/slides/slides-animations')
+require('./animations/slides/slides-events')
 require('./animations/secret-card/card-events')
 // require('./tools/hide-scroll')
 

@@ -3,8 +3,9 @@
 $().ready(function () {
   $('#btn-trigger').click(function () {
     let $currentSlide = $('#trg').attr('current-pos')
-    $(`section.main-content-scroll.${$currentSlide}-scroll`).css({
-      "top": "10%"
-    })
+    let $currentCard = $(`section.card-container.${$currentSlide}-card`)
+
+    $currentCard.toggleClass('is-hidden')
+    $currentCard.toggleClass('is-visible')
   })
 })

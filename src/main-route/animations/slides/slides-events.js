@@ -2,19 +2,17 @@
 
 let movePercent
 let $currentSlide
-const moveSlide = require('./slides-methods/move-slide')
+const pipeSlide = require('./slides-methods/pipe-slide')
 
 $().ready(function () {
   // previous button function animation
   $('#backward').click(function (ev) {
     $currentSlide = $('.slide-buttons').attr('current-pos')
-    // console.log($currentSlide)
-    moveSlide($currentSlide, false)
+    pipeSlide($currentSlide, false)
   })
   // next button function animation
   $('#forward').click(function (ev) {
     $currentSlide = $('.slide-buttons').attr('current-pos')
-    // console.log($currentSlide)
-    moveSlide($currentSlide, true)
+    pipeSlide($currentSlide, true)
   })
 })

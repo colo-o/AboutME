@@ -5,14 +5,16 @@ const header = require('./header/template')
 const footer = require('./footer/template')
 const sideButtons = require('./side-buttons/template')
 const content = require('./content/template')
-const secretCard = require('./card-button/template')
+const buttonCard = require('./card-button/template')
+const cardContent = require('./secret-cards/template')
 
 module.exports = yo`
   <div class="yo-wrap-container">
     ${header}
     ${sideButtons}
     ${content}
-    ${secretCard}
+    ${buttonCard}
+    ${cardContent}
     ${footer}
   </div>
 `
