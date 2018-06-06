@@ -4,7 +4,6 @@ const findPosition = require('./find-position')
 const opacity = require('../opacity')
 const isHideButton = require('../../secret-card/is-hide-button')
 const slideAnimation = require('./slide-animation')
-const moveCard = require('../../secret-card/move-card')
 const toggleCard = require('../../secret-card/card-toggle') 
 
 function pipeSlide (currentPosition, isForward) {
@@ -14,7 +13,7 @@ function pipeSlide (currentPosition, isForward) {
   isHideButton(targetString)
   toggleCard(currentPosition)
   slideAnimation(isForward, targetString, currentPosition)
-  moveCard(isForward, targetString, currentPosition)
+  // moveCard(isForward, targetString, currentPosition)
 }
 
 module.exports = pipeSlide

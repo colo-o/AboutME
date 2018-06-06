@@ -109,7 +109,7 @@ p {
   -o-transition: .5;
 }
 
-.slide-buttons[current-pos="home"] .slide-buttons-left {
+.slide-buttons[current-pos=home] .slide-buttons-left {
   pointer-events: none;
   opacity: 0;
   transform: scale(.4);
@@ -118,7 +118,7 @@ p {
   -moz-transform: scale(.4);
 }
 
-.slide-buttons[current-pos="gaming"] .slide-buttons-right {
+.slide-buttons[current-pos=gaming] .slide-buttons-right {
   pointer-events: none;
   opacity: 0;
   transform: scale(.4);
@@ -166,19 +166,31 @@ p {
 }
 
 .design {
-  background: var(--bg-red-color);
+  /* background: var(--bg-red-color) url('./assets/design.jpg') center; */
+  background-image: url('./assets/overlay.png/'), url('./assets/design.jpg');
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
   top: 0%;
   left: 100%;
 }
 
 .develop {
-  background: var(--bg-blue-color);
+  /* background: var(--bg-blue-color) url('./assets/code.jpg') center; */
+  background-image: url('./assets/overlay.png/'), url('./assets/code.jpg');
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
   top: 0%;
   left: 100%;
 }
 
 .gaming {
-  background: var(--bg-black-color);
+  /* background: var(--bg-black-color) url('./assets/videogames-2.jpg') center; */
+  background-image: url('./assets/overlay.png/'), url('./assets/videogames-1.jpg');
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
   top: 0%;
   left: 100%;
 }
@@ -215,7 +227,16 @@ p {
   grid-gap: 10px;
   background: var(--bg-white-color);
   position: fixed;
-  transition: .8s;
+  top: 100%;
+  left: 0%;
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -o-transition: .7s;
+  transition-timing-function: cubic-bezier(.75,0,.54,.83);
+  -webkit-transition-timing-function: cubic-bezier(.75,0,.54,.83);
+  -moz-transition-timing-function: cubic-bezier(.75,0,.54,.83);
+  -o-transition-timing-function: cubic-bezier(.75,0,.54,.83);
   padding: 0 2% 0 2%;
   box-shadow: 3px 8px 15px 0px;
   overflow-y: scroll;
@@ -239,8 +260,9 @@ p {
 }
 
 .f-line {
-  width: 90%;
+  width: 60%;
   height: 1px;
+  opacity: .8;
   background: #161616;
   position: absolute;
   transform: rotate(45deg);
@@ -249,8 +271,9 @@ p {
 }
 
 .s-line {
-  width: 90%;
+  width: 60%;
   height: 1px;
+  opacity: .8;
   background: #161616;
   position: absolute;
   transform: rotate(-45deg);
@@ -258,24 +281,8 @@ p {
   -ms-transform: rotate(-45deg);
 }
 
-.is-hidden {
-  top: 100%;
-}
-
 .is-visible {
   top: 5%;
-}
-
-.design-card {
-  left: 100%;
-}
-
-.develop-card {
-  left: 100%;
-}
-
-.gaming-card {
-  left: 100%;
 }
 
 .title-size {
@@ -289,7 +296,15 @@ p {
 }
 
 .body-size {
-  width: 70%;
+  /* width: 70%; */
+}
+
+.left-f {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.left-s {
+  grid-area: 4 / 1 / 5 / 2;
 }
 
 .card-btn-container {
@@ -400,7 +415,6 @@ p {
     opacity: 0.2;
   }
 }
-
 
 /* Mediaquerie's Breakpoints */
 
