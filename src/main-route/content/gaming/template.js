@@ -3,9 +3,10 @@
 const yo = require('yo-yo')
 
 module.exports = yo`
-<article class="main-content-panel gaming">
-  <section class="container-title">
-    <h1 class="main-title">Video Juegos</h1>
+<article class="mc-panel mc-transition mc-gaming">
+  <div class="mc-overlay"></div>
+  <section class="mc-container-title">
+    <h1 class="mc-title">Video Juegos</h1>
   </section>
-  <div class="visibility-container"></div>
+  <div class="mc-visibility"></div>
 </article>`

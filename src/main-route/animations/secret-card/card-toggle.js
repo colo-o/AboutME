@@ -5,7 +5,7 @@ function toggleCard (currentPosition) {
     return false
   }
 
-  let $currentCard = $(`section.card-container.${currentPosition}-card`)
+  let $currentCard = $(`section.c-container.c-${currentPosition}`)
   let hasClass = $currentCard.hasClass('is-visible')
 
   if (hasClass) {

@@ -8,7 +8,7 @@ const gaming = require('./gaming/template')
 
 
 module.exports = yo`
-  <section class="main-content bord">
+  <section class="mc-container bord">
     ${home}
     ${design}
     ${develop}

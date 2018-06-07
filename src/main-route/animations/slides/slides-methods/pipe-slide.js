@@ -13,7 +13,6 @@ function pipeSlide (currentPosition, isForward) {
   isHideButton(targetString)
   toggleCard(currentPosition)
   slideAnimation(isForward, targetString, currentPosition)
-  // moveCard(isForward, targetString, currentPosition)
 }
 
 module.exports = pipeSlide

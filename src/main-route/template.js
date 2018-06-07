@@ -9,7 +9,7 @@ const buttonCard = require('./card-button/template')
 const cardContent = require('./secret-cards/template')
 
 module.exports = yo`
-  <div class="yo-wrap-container">
+  <div class="y-wrap">
     ${header}
     ${sideButtons}
     ${content}

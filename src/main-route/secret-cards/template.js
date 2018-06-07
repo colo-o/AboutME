@@ -6,7 +6,7 @@ const cardDevelop = require('./develop/template')
 const cardGaming = require('./gaming/template')
 
 module.exports = yo`
-  <section class="card-wrap">
+  <section class="c-wrap">
     ${cardDesign}
     ${cardDevelop}
     ${cardGaming}

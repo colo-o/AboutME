@@ -3,15 +3,15 @@
 const yo = require('yo-yo')
 
 module.exports = yo`
-<section class="card-container gaming-card is-hidden bord">
-  <div id="tg-card-gam" class="close-btn-container bord">
-    <div class="f-line"></div>
-    <div class="s-line"></div>
+<section class="c-container c-gaming is-hidden bord">
+  <div id="tg-card-gam" class="c-close bord">
+    <div class="c-close-f"></div>
+    <div class="c-close-s"></div>
   </div>
-  <div class="title-size">
-    <h1 class="text-title black">video juegos</h1>
+  <div class="c-title-container">
+    <h1 class="c-title black">video juegos</h1>
   </div>
-  <p class="black left-f body-size">
+  <p class="black c-left-f">
     Creci jugando video juegos, cuando tuve mi primer consola, una bella 
     famicon de nintendo, aprendi a amar el vinculo que puede crear una maquina y un ser humano
     . Recuerdo un gran titulo que marco completamente mi vida, Super Mario World, sin duda fue la

@@ -3,12 +3,12 @@
 let yo = require('yo-yo')
 
 module.exports = yo`
-<header class="header bord">
-  <div class="header-menu">
-    <div class="header-menu-toggle">
-      <p class="header-menu-burger"></p>
-      <p class="header-menu-burger"></p>
-      <p class="header-menu-burger"></p>
+<header class="h-container bord">
+  <div class="r-margin">
+    <div class="h-items">
+      <p class="h-item"></p>
+      <p class="h-item"></p>
+      <p class="h-item"></p>
     </div>
   </div>
 </header>`

@@ -3,10 +3,11 @@
 let yo = require('yo-yo')
 
 module.exports = yo`
-<article class="main-content-panel develop">
-  <section class="container-title">
-    <h1 class="main-title">Desarrollo Web</h1>
+<article class="mc-panel mc-transition mc-develop">
+  <div class="mc-overlay"></div>
+  <section class="mc-container-title">
+    <h1 class="mc-title">Desarrollo Web</h1>
   </section>
-  <div class="visibility-container"></div>
+  <div class="mc-visibility"></div>
 </article>
 `
