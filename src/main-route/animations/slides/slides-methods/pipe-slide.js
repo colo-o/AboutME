@@ -7,8 +7,7 @@ const slideAnimation = require('./slide-animation')
 const toggleCard = require('../../secret-card/card-toggle') 
 
 function pipeSlide (currentPosition, isForward) {
-  let movePercent
-  let { targetString } = findPosition(currentPosition, isForward)
+  let targetString = findPosition(currentPosition, isForward)
   opacity(currentPosition, targetString)
   isHideButton(targetString)
   toggleCard(currentPosition)

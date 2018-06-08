@@ -8,8 +8,7 @@ let previousTarget
 function calcPosition (currentPosition, isForward) {
   let currentSlideIndex = findPositionIndex(currentPosition)
   targetString = isForward ? slides[currentSlideIndex + 1] : slides[currentSlideIndex - 1]
-  targetIndex = isForward ? currentSlideIndex + 1 : currentSlideIndex - 1
-  return { targetIndex, targetString }
+  return targetString
 }
 
 function findPositionIndex (position) {
