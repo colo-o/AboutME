@@ -1,6 +1,6 @@
 'use strict'
 
-const burgerAnimation = require('./burger-animation')
+const burgerAnimation = require('./burger-animation/burger-animation')
 let $burgerMenu
 
 $().ready(function () {

@@ -3,10 +3,7 @@
 let $footer
 let footerAttr
 
-function burgerAnimation () {
-  $('#o-m').toggleClass('is-v-active')
-  $('#h').toggleClass('h-clicked')
-  $('.h-items p').toggleClass('h-item-clicked')
+function footerAnimation () {
   $footer = $('.f-container')
   $footer.toggleClass('f-active')
 
@@ -19,4 +16,4 @@ function burgerAnimation () {
   }
 }
 
-module.exports = burgerAnimation
+module.exports = footerAnimation

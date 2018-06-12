@@ -6,9 +6,9 @@ module.exports = yo`
 <header id="h" class="h-container bord">
   <div id="tg-m" class="h-animation-box r-margin">
     <div class="h-items">
-      <p class="h-item f"></p>
-      <p class="h-item s"></p>
-      <p class="h-item t"></p>
+      <div id="f" class="h-item"></div>
+      <div id="s" class="h-item"></div>
+      <div id="t" class="h-item"></div>
     </div>
   </div>
 </header>`
