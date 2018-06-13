@@ -4,6 +4,7 @@ let movePercent
 let target
 
 function slideAnimation ( isForward, targetString, currentPosition) {
+
   if (isForward) {
     $(`.mc-panel.mc-${targetString}`).toggleClass('is-s-visible')
     $(`.mc-panel.mc-${currentPosition}`).toggleClass('is-s-backward')

@@ -10,7 +10,7 @@ function burgerAnimation () {
   $offCanvas.toggleClass('is-v-active')
   $header = $('#h')
   $header.toggleClass('h-clicked')
-  buttonAnimation($header)
+  buttonAnimation()
   $('.h-items div').toggleClass('h-item-clicked')
   footerAnimation()
 }
