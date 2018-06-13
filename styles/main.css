@@ -116,10 +116,10 @@ li {
   -webkit-transition: .4s;
   -moz-transition: .4s;
   -o-transition: .4s;
-  transition-delay: .2s;
+  /* transition-delay: .2s;
   -webkit-transition-delay: .2s;
   -moz-transition-delay: .2s;
-  -o-transition-delay: .2s;
+  -o-transition-delay: .2s; */
   transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
   -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
   -moz-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
