@@ -10,7 +10,6 @@ function toggleCard (currentPosition) {
 
   if (hasClass) {
     $currentCard.removeClass('is-visible')
-    $currentCard.addClass('is-hidden')
   }
 }
 

@@ -1,6 +1,6 @@
 'use strict'
 
-const findIndex = require('../../slides/slides-methods/find-position')
+const findIndex = require('../../slides/slides-methods/SlideAnimations')
 let isForwardVar
 
 function isForward (navPos) {
