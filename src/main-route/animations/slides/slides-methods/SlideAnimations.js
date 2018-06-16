@@ -1,16 +1,15 @@
 'use strict'
 
-// let slides = ['home', 'design', 'develop', 'gaming']
-let 
+let slides 
+// let 
 
-class SlidesWillMove {
-
+export default class {
   constructor () {
     slides = ['home', 'design', 'develop', 'gaming']
   }
 
-
   singleMoveTargets (currentPosition, isForward) {
+    let target = this.findPosition(currentPosition, isForward, true)
     if (isForward) {
       
     }
@@ -18,5 +17,17 @@ class SlidesWillMove {
 
   multipleMoveTargets () {
 
+  }
+
+  findPosition (currentPosition, isForward, comeFrom, targetNav) {
+    let currentIndex
+    let targetString
+
+    if (comeFrom) {
+      currentIndex = slides.findIndex((slide) => {
+        if (slide === currentPosition) return slide
+      })
+    console.log(currentIndex)
+    }
   }
 }
