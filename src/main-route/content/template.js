@@ -1,17 +1,16 @@
 'use strict'
 
-const yo = require('yo-yo')
-const home = require('./home/template')
-const design = require('./design/template')
-const develop = require('./develop/template')
-const gaming = require('./gaming/template')
+import yo from 'yo-yo'
+import home from './home/template'
+import design from './design/template'
+import develop from './develop/template'
+import gaming from './gaming/template'
 
 
-module.exports = yo`
-  <section class="mc-container bord">
-    ${home}
-    ${design}
-    ${develop}
-    ${gaming}
-  </section>
-`
+export default yo`
+    <section class="mc-container bord">
+      ${home}
+      ${design}
+      ${develop}
+      ${gaming}
+    </section>`

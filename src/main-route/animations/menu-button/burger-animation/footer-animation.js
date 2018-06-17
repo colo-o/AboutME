@@ -3,7 +3,7 @@
 let $footer
 let footerAttr
 
-function footerAnimation () {
+export default function footerAnimation () {
   $footer = $('.f-container')
   $footer.toggleClass('f-active')
 
@@ -15,5 +15,3 @@ function footerAnimation () {
     $footer.attr('o-s', 'off')
   }
 }
-
-module.exports = footerAnimation

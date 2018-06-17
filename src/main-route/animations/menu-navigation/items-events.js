@@ -1,6 +1,6 @@
 'use strict'
 
-const menuPipe = require('./menu-animation/menu-pipe')
+import menuPipe from './menu-animation/menu-pipe'
 
 $().ready(function () {
   // attaching all li items with just 1 event

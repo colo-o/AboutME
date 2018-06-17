@@ -1,7 +1,6 @@
 'use strict'
 
-
-function slideWillMove (currentPosition, isForwardVar, navPos) {
+export default function slideWillMove (currentPosition, isForwardVar, navPos) {
   let backwardArray
   let forwardArray
   let slides = ['home', 'design', 'develop', 'gaming']
@@ -14,5 +13,3 @@ function slideWillMove (currentPosition, isForwardVar, navPos) {
 function isForOrBack () {
 
 }
-
-module.exports = slideWillMove

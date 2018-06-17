@@ -1,11 +1,10 @@
 'use strict'
 
-const yo = require('yo-yo')
-const logo = require('../../../../yo-svgs/logo')
+import yo from 'yo-yo'
+import logo from '../../../../yo-svgs/logo'
 
-module.exports = yo`
-<article class="mc-panel mc-home">
-  <section class="svg-hl">${logo}</section>
-  <div class="mc-visibility active"></div>
-</article>
-`
+export default yo`
+    <article class="mc-panel mc-home">
+      <section class="svg-hl">${logo}</section>
+      <div class="mc-visibility active"></div>
+    </article>`

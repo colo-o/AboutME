@@ -1,6 +1,6 @@
 'use strict'
 
-const burgerAnimation = require('./burger-animation/burger-animation')
+import burgerAnimation from './burger-animation/burger-animation'
 let $burgerMenu
 
 $().ready(function () {

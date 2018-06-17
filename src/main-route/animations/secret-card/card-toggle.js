@@ -1,6 +1,6 @@
 'use strict'
 
-function toggleCard (currentPosition) {
+export default function toggleCard (currentPosition) {
   if (currentPosition === "home") {
     return false
   }
@@ -12,5 +12,3 @@ function toggleCard (currentPosition) {
     $currentCard.removeClass('is-visible')
   }
 }
-
-module.exports = toggleCard

@@ -1,14 +1,13 @@
 'use strict'
 
-const yo = require('yo-yo')
-const cardDesign = require('./design/template')
-const cardDevelop = require('./develop/template')
-const cardGaming = require('./gaming/template')
+import yo from 'yo-yo'
+import cardDesign from './design/template'
+import cardDevelop from './develop/template'
+import cardGaming from './gaming/template'
 
-module.exports = yo`
-  <section class="c-wrap">
-    ${cardDesign}
-    ${cardDevelop}
-    ${cardGaming}
-  </section>
-`
+export default yo`
+    <section class="c-wrap">
+      ${cardDesign}
+      ${cardDevelop}
+      ${cardGaming}
+    </section>`

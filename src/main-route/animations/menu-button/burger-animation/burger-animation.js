@@ -1,11 +1,11 @@
 'use strict'
 
-const footerAnimation = require('./footer-animation')
-const buttonAnimation = require('./button-animation')
+import footerAnimation from './footer-animation'
+import buttonAnimation from './button-animation'
 let $offCanvas
 let $header
 
-function burgerAnimation () {
+export default function burgerAnimation () {
   $offCanvas = $('#o-m')
   $offCanvas.toggleClass('is-v-active')
   $header = $('#h')
@@ -14,5 +14,3 @@ function burgerAnimation () {
   $('.h-items div').toggleClass('h-item-clicked')
   footerAnimation()
 }
-
-module.exports = burgerAnimation

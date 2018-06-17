@@ -1,15 +1,15 @@
 'use strict'
 
-const yo = require('yo-yo')
-const header = require('./header/template')
-const offCanvas = require('./off-canvas-menu/template')
-const footer = require('./footer/template')
-const sideButtons = require('./side-buttons/template')
-const content = require('./content/template')
-const buttonCard = require('./card-button/template')
-const cardContent = require('./secret-cards/template')
+import yo from 'yo-yo'
+import header from './header/template'
+import offCanvas from './off-canvas-menu/template'
+import footer from './footer/template'
+import sideButtons from './side-buttons/template'
+import content from './content/template'
+import buttonCard from './card-button/template'
+import cardContent from './secret-cards/template'
 
-module.exports = yo`
+export default yo`
   <div class="y-wrap">
     ${header}
     ${offCanvas}
@@ -18,5 +18,4 @@ module.exports = yo`
     ${buttonCard}
     ${cardContent}
     ${footer}
-  </div>
-`
+  </div>`

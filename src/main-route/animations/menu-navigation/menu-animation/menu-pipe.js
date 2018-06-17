@@ -1,14 +1,12 @@
 'use strict'
 
-const pipeSlide = require('../../slides/slides-methods/pipe-slide')
-const slideWillMove = require('./slide-will-move')
-const isForward = require('./is-forward')
+import pipeSlide from '../../slides/slides-methods/pipe-slide'
+import slideWillMove from './slide-will-move'
+import isForward from './is-forward'
 
-function menuPipe (navPos) {
+export default function menuPipe (navPos) {
   let { isForwardVar, currentPosition } = isForward(navPos)
   // console.log(isForwardVar, currentPosition)
   pipeSlide(currentPosition, isForwardVar)
   slideWillMove(currentPosition, isForwardVar, navPos)
 }
-
-module.exports = menuPipe

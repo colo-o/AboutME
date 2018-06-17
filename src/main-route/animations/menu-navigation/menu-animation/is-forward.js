@@ -1,9 +1,9 @@
 'use strict'
 
-const findIndex = require('../../slides/slides-methods/SlideAnimations')
+import findIndex from '../../slides/slides-methods/SlideAnimations'
 let isForwardVar
 
-function isForward (navPos) {
+export default function isForward (navPos) {
   let currentPosition = $('#trg').attr('current-pos')
   let { navCurrentPos, navIndex } = findIndex(currentPosition, false, true, navPos)
   // console.log(navCurrentPos, navIndex)
@@ -13,5 +13,3 @@ function isForward (navPos) {
   (navIndex > navCurrentPos) ? isForwardVar = true : isForwardVar = false
   return { isForwardVar, currentPosition }
 }
-
-module.exports = isForward

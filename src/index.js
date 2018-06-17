@@ -1,7 +1,7 @@
 'use strict'
 
-const page = require('page')
+import page from 'page'
 
-require('./main-route')
+import './main-route'
 
 page()

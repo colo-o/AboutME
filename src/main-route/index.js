@@ -1,12 +1,12 @@
 'use strict'
 
-const page = require('page')
-const template = require('./template')
-const empty = require('empty-element')
-require('./animations/slides/slides-events')
-// require('./animations/secret-card/card-events')
-require('./animations/menu-button/menu-events')
-require('./animations/menu-navigation/items-events')
+import page from 'page'
+import template from './template'
+import empty from 'empty-element'
+import './animations/slides/slides-events'
+import './animations/secret-card/card-events'
+import './animations/menu-button/menu-events'
+import './animations/menu-navigation/items-events'
 
 page('/', function () {
   let main = document.getElementById('sz')
