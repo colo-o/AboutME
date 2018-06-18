@@ -1,12 +1,9 @@
 'use strict'
 
-import pipeSlide from '../../slides/slides-methods/pipe-slide'
-import slideWillMove from './slide-will-move'
-import isForward from './is-forward'
+import SlideWillMove  from '../../slides/slides-methods/SlideAnimations'
 
-export default function menuPipe (navPos) {
-  let { isForwardVar, currentPosition } = isForward(navPos)
-  // console.log(isForwardVar, currentPosition)
-  pipeSlide(currentPosition, isForwardVar)
-  slideWillMove(currentPosition, isForwardVar, navPos)
+let SlideAnimIns = new SlideWillMove()
+
+export default function menuPipe (currentPosition, navPos) {
+  SlideAnimIns.multipleMoveTargets(currentPosition, navPos)
 }

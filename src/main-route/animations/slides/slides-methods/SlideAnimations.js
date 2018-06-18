@@ -15,12 +15,24 @@ export default class {
     currentIndex = slides.findIndex((slide) => {
       if (slide === currentPosition) return slide
     })
+
     isForward ? targetString = slides[currentIndex + 1] : targetString = slides[currentIndex - 1]
     return targetString
   }
 
   multipleMoveTargets (currentPosition, targetNav, isForward) {
-    
+    let arrayIndexPos = []
+    let arrayStringPos = [ currentPosition, targetNav ]
+
+    arrayStringPos.map((string) => {
+      let index = slides.findIndex((slide) => {
+        if (string === slide) return slide
+      })
+      arrayIndexPos.push(index)
+    })
+
+    console.log(arrayIndexPos)
+
   }
 
   animationMove (targetString, currentPosition, isForward) {
