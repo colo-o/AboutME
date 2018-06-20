@@ -1,11 +1,9 @@
 'use strict'
 
-let slides 
-// let 
+let slides = ['home', 'design', 'develop', 'gaming']
 
 export default class {
   constructor () {
-    slides = ['home', 'design', 'develop', 'gaming']
   }
 
   singleMoveTargets (currentPosition, isForward) {
@@ -20,9 +18,11 @@ export default class {
     return targetString
   }
 
-  multipleMoveTargets (currentPosition, targetNav, isForward) {
+  multipleMoveTargets (currentPosition, targetNav) {
+    let targets = []
     let arrayIndexPos = []
     let arrayStringPos = [ currentPosition, targetNav ]
+    let isForward
 
     arrayStringPos.map((string) => {
       let index = slides.findIndex((slide) => {
@@ -31,11 +31,30 @@ export default class {
       arrayIndexPos.push(index)
     })
 
-    console.log(arrayIndexPos)
+    let targetIndex = arrayIndexPos[1]
+    let currentIndex = arrayIndexPos[0]
 
+    if (currentIndex === targetIndex) return false;
+
+    currentIndex > targetIndex ? isForward = false : isForward = true
+
+    for (let index = 0; index < slides.length; index++) {
+      if (isForward) {
+        if (index < targetIndex) {
+          index < currentIndex ? false : targets.push(slides[index])
+        }
+      } else {
+        if (index > targetIndex) {
+          index > currentIndex ? false : targets.unshift(slides[index])
+        }
+      }
+    }
+    console.log(targets, targetNav)
+
+    return { targets, isForward }
   }
 
-  animationMove (targetString, currentPosition, isForward) {
+  singleAnimationMove (targetString, currentPosition, isForward) {
     if (isForward) {
       $(`.mc-panel.mc-${targetString}`).toggleClass('is-s-visible')
       $(`.mc-panel.mc-${currentPosition}`).toggleClass('is-s-backward')
@@ -44,6 +63,21 @@ export default class {
       $(`.mc-panel.mc-${targetString}`).toggleClass('is-s-backward')
     }
     $('.sb-container').attr('current-pos', `${targetString}`)
+  }
+
+  multipleAnimationMove (targets, targetNav, currentPosition, isForward) {
+    targets.map((target) => {
+      if (isForward) {
+        $(`.mc-panel.mc-${target}`).addClass('is-s-backward')
+        // $(`.mc-panel.mc-${target}`).removeClass('is-s-visible')
+      } else {
+        $(`.mc-panel.mc-${target}`).removeClass('is-s-backward')
+        $(`.mc-panel.mc-${target}`).removeClass('is-s-visible')
+      }
+    })
+    $(`.mc-panel.mc-${targetNav}`).addClass('is-s-visible')
+    $('.sb-container').attr('current-pos', `${targetNav}`)
+
   }
 
   opacityToggle (targetString, currentPosition) {
