@@ -9,6 +9,7 @@ let slideAnimIns = new SlideWillMove()
 export default function pipeSlide (currentPosition, isForward) {
   let targetString = slideAnimIns.singleMoveTargets(currentPosition, isForward)
   slideAnimIns.singleAnimationMove(targetString, currentPosition, isForward)
+  slideAnimIns.animationMove(targetString)
   slideAnimIns.opacityToggle(targetString, currentPosition)
   isHideButton(targetString)
   toggleCard(currentPosition)

@@ -1,3 +1,5 @@
+import { isArray } from "util";
+
 'use strict'
 
 let slides = ['home', 'design', 'develop', 'gaming']
@@ -54,6 +56,30 @@ export default class {
     return { targets, isForward }
   }
 
+  animationMove (target, currentPosition, isForward, targetNav ) {
+    if (Array.isArray(target)) {
+      if (isForward) {
+        target.map((target) => {
+          let $currentSlide = $(`.mc-panel.mc-${target}`)
+          $currentSlide.hasClass('is-s-visible') ? console.log('tengo la clase visible, la voy a quitar') : false;
+          $currentSlide.hasClass('is-s-backward') ? false : $currentSlide.addClass('is-s-backward');
+        })
+        let $target = $(`.mc-panel.mc-${targetNav}`)
+        $target.hasClass('is-s-backward') ? $target.removeClass('is-s-backward') : false;
+        $target.hasClass('is-s-visible') ? false : $target.addClass('is-s-visible');
+      } else {
+
+      }
+      let $target
+    } else {
+      if (isForward) {
+
+      } else {
+
+      }
+    }
+  }
+
   singleAnimationMove (targetString, currentPosition, isForward) {
     if (isForward) {
       $(`.mc-panel.mc-${targetString}`).toggleClass('is-s-visible')
@@ -68,14 +94,17 @@ export default class {
   multipleAnimationMove (targets, targetNav, currentPosition, isForward) {
     targets.map((target) => {
       if (isForward) {
-        $(`.mc-panel.mc-${target}`).addClass('is-s-backward')
-        // $(`.mc-panel.mc-${target}`).removeClass('is-s-visible')
+        $(`.mc-panel.mc-${target}`).toggleClass('is-s-visible')
       } else {
-        $(`.mc-panel.mc-${target}`).removeClass('is-s-backward')
-        $(`.mc-panel.mc-${target}`).removeClass('is-s-visible')
+        $(`.mc-panel.mc-${target}`).toggleClass('is-s-backward')
       }
     })
-    $(`.mc-panel.mc-${targetNav}`).addClass('is-s-visible')
+    if (isForward) {
+      $(`.mc-panel.mc-${targetNav}`).toggleClass('is-s-backward')
+    } else {
+      $(`.mc-panel.mc-${targetNav}`).toggleClass('is-s-visible')
+    }
+    // $(`.mc-panel.mc-${targetNav}`).addClass('is-s-visible')
     $('.sb-container').attr('current-pos', `${targetNav}`)
 
   }

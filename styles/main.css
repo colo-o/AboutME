@@ -308,7 +308,7 @@ li {
 
 .mc-home {
   top: 0;
-  left: 0;
+  left: -100% ;
   background: var(--bg-blue-color);
 }
 
