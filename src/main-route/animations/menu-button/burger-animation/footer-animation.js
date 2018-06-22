@@ -9,7 +9,7 @@ export default function footerAnimation () {
 
   footerAttr = $footer.attr('o-s')
 
-  if (footerAttr === "off") {
+  if (footerAttr === 'off') {
     $footer.attr('o-s', 'on')
   } else {
     $footer.attr('o-s', 'off')

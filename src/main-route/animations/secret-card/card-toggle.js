@@ -1,7 +1,7 @@
 'use strict'
 
 export default function toggleCard (currentPosition) {
-  if (currentPosition === "home") {
+  if (currentPosition === 'home') {
     return false
   }
 

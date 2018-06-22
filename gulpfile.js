@@ -11,7 +11,7 @@ let minicss = require('gulp-minify-css')
 
 gulp.task('scripts', function () {
   browserify('./src/index.js')
-    .transform(babel, { presets: ["es2015"] })
+    .transform(babel, { presets: ['es2015'] })
     .bundle()
     .pipe(source('index.js'))
     .pipe(rename('app.js'))

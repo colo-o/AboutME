@@ -1,6 +1,5 @@
 'use strict'
 
-let movePercent
 let $currentSlide
 import pipeSlide from './slides-methods/pipe-slide'
 

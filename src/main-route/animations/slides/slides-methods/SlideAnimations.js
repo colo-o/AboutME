@@ -1,5 +1,3 @@
-import { isArray } from "util";
-
 'use strict'
 
 let slides = ['home', 'design', 'develop', 'gaming']
@@ -36,7 +34,7 @@ export default class {
     let targetIndex = arrayIndexPos[1]
     let currentIndex = arrayIndexPos[0]
 
-    if (currentIndex === targetIndex) return false;
+    if (currentIndex === targetIndex) return false
 
     currentIndex > targetIndex ? isForward = false : isForward = true
 
@@ -51,70 +49,54 @@ export default class {
         }
       }
     }
-    console.log(targets, targetNav)
-
     return { targets, isForward }
   }
 
-  animationMove (target, currentPosition, isForward, targetNav ) {
-    if (Array.isArray(target)) {
+  animationMove (target, currentPosition, isForward, targetNav) {
+    let isArray = Array.isArray(target)
+    if (isArray) {
       if (isForward) {
         target.map((target) => {
           let $currentSlide = $(`.mc-panel.mc-${target}`)
-          $currentSlide.hasClass('is-s-visible') ? console.log('tengo la clase visible, la voy a quitar') : false;
-          $currentSlide.hasClass('is-s-backward') ? false : $currentSlide.addClass('is-s-backward');
+          $currentSlide.hasClass('is-s-visible') ? $currentSlide.removeClass('is-s-visible') : false
+          $currentSlide.hasClass('is-s-backward') ? false : $currentSlide.addClass('is-s-backward')
         })
         let $target = $(`.mc-panel.mc-${targetNav}`)
-        $target.hasClass('is-s-backward') ? $target.removeClass('is-s-backward') : false;
-        $target.hasClass('is-s-visible') ? false : $target.addClass('is-s-visible');
+        $target.hasClass('is-s-backward') ? $target.removeClass('is-s-backward') : false
+        $target.hasClass('is-s-visible') ? false : $target.addClass('is-s-visible')
       } else {
-
+        target.map((target) => {
+          let $currentSlide = $(`.mc-panel.mc-${target}`)
+          $currentSlide.hasClass('is-s-backward') ? $currentSlide.removeClass('is-s-backward') : false
+          $currentSlide.hasClass('is-s-visible') ? $currentSlide.removeClass('is-s-visible') : false
+        })
+        let $target = $(`.mc-panel.mc-${targetNav}`)
+        $target.hasClass('is-s-backward') ? $target.removeClass('is-s-backward') : false
+        $target.hasClass('is-s-visible') ? false : $target.addClass('is-s-visible')
       }
-      let $target
     } else {
+      let $targetSlide = $(`.mc-panel.mc-${target}`)
+      let $currentSlide = $(`.mc-panel.mc-${currentPosition}`)
       if (isForward) {
-
+        $currentSlide.hasClass('is-s-visible') ? $currentSlide.removeClass('is-s-visible') : false
+        $currentSlide.hasClass('is-s-backward') ? false : $currentSlide.addClass('is-s-backward')
+        $targetSlide.hasClass('is-s-visible') ? false : $targetSlide.addClass('is-s-visible')
       } else {
-
+        $currentSlide.hasClass('is-s-visible') ? $currentSlide.removeClass('is-s-visible') : false
+        $targetSlide.hasClass('is-s-backward') ? $targetSlide.removeClass('is-s-backward') : false
+        $targetSlide.hasClass('is-s-visible') ? false : $targetSlide.addClass('is-s-visible')
       }
     }
-  }
-
-  singleAnimationMove (targetString, currentPosition, isForward) {
-    if (isForward) {
-      $(`.mc-panel.mc-${targetString}`).toggleClass('is-s-visible')
-      $(`.mc-panel.mc-${currentPosition}`).toggleClass('is-s-backward')
-    } else {
-      $(`.mc-panel.mc-${currentPosition}`).toggleClass('is-s-visible')
-      $(`.mc-panel.mc-${targetString}`).toggleClass('is-s-backward')
-    }
-    $('.sb-container').attr('current-pos', `${targetString}`)
-  }
-
-  multipleAnimationMove (targets, targetNav, currentPosition, isForward) {
-    targets.map((target) => {
-      if (isForward) {
-        $(`.mc-panel.mc-${target}`).toggleClass('is-s-visible')
-      } else {
-        $(`.mc-panel.mc-${target}`).toggleClass('is-s-backward')
-      }
-    })
-    if (isForward) {
-      $(`.mc-panel.mc-${targetNav}`).toggleClass('is-s-backward')
-    } else {
-      $(`.mc-panel.mc-${targetNav}`).toggleClass('is-s-visible')
-    }
-    // $(`.mc-panel.mc-${targetNav}`).addClass('is-s-visible')
-    $('.sb-container').attr('current-pos', `${targetNav}`)
-
+    $('.sb-container').attr('current-pos', `${isArray ? targetNav : target}`)
+    this.opacityToggle(isArray ? targetNav : target, currentPosition)
   }
 
   opacityToggle (targetString, currentPosition) {
     let currentSlide = $(`article.mc-panel.mc-${currentPosition} div:last-child`)
-    if (currentPosition === "home") {
+    if (currentPosition === 'home') {
       currentSlide.toggleClass('active')
     }
-    if (currentPosition != "home") {
+    if (currentPosition !== 'home') {
       currentSlide.toggleClass('active')
     }
     let targetSlide = $(`article.mc-panel.mc-${targetString} div:last-child`)

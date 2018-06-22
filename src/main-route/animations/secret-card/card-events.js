@@ -9,19 +9,19 @@ $().ready(function () {
   })
 
   $('#tg-card-des').click(function () {
-    let $currentCard = $("section.c-container.c-design")
+    let $currentCard = $('section.c-container.c-design')
 
     $currentCard.toggleClass('is-visible')
   })
 
   $('#tg-card-dev').click(function () {
-    let $currentCard = $("section.c-container.c-develop")
+    let $currentCard = $('section.c-container.c-develop')
 
     $currentCard.toggleClass('is-visible')
   })
 
   $('#tg-card-gam').click(function () {
-    let $currentCard = $("section.c-container.c-gaming")
+    let $currentCard = $('section.c-container.c-gaming')
 
     $currentCard.toggleClass('is-visible')
   })

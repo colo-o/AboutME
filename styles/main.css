@@ -116,10 +116,6 @@ li {
   -webkit-transition: .4s;
   -moz-transition: .4s;
   -o-transition: .4s;
-  /* transition-delay: .2s;
-  -webkit-transition-delay: .2s;
-  -moz-transition-delay: .2s;
-  -o-transition-delay: .2s; */
   transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
   -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
   -moz-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
@@ -258,6 +254,60 @@ li {
   -webkit-transform: scale(.4);
   -ms-transform: scale(.4);
   -moz-transform: scale(.4);
+}
+
+.sb-button {
+  width: 6%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.sb-button div {
+  position: absolute;
+}
+
+.sb-button div:nth-of-type(1) {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5;
+  -o-transition: .5;
+}
+
+.sb-button:hover div:nth-of-type(1) {
+  width: 40px;
+  height: 40px;
+  opacity: .50;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.sb-button div:nth-of-type(2) {
+  width: 50px;
+  height: 1px;
+  left: 25px;
+  background: var(--bg-white-color);
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5;
+  -o-transition: .5;
+}
+
+.sb-button:hover div:nth-of-type(2) {
+  width: 30px;
+  height: 1px;
+  left: 20px;
+  background: var(--bg-white-color);
+}
+
+#forward {
+  transform: rotate(180deg);
 }
 
 .mc-container {
