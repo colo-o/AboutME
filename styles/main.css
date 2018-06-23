@@ -188,7 +188,8 @@ li {
 	align-items: center;
 	top: -100%;
 	z-index: 12;
-	background: var(--bg-white-color);
+	background: #ffffff url('./assets/oc-background.svg') center;
+	background-size: 1400px;
 	will-change: top;
 	transition: .8s;
 	-webkit-transition: .8s;
