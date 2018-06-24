@@ -187,9 +187,10 @@ li {
 	justify-content: center;
 	align-items: center;
 	top: -100%;
+	opacity: 0;
 	z-index: 12;
-	background: #ffffff url('./assets/oc-background.svg') center;
-	background-size: 1400px;
+	background: var(--bg-white-color);
+	overflow: hidden;
 	will-change: top;
 	transition: .8s;
 	-webkit-transition: .8s;
@@ -203,10 +204,12 @@ li {
 
 .is-v-active {
 	top: 0;
+	opacity: 1;
 }
 
 .o-items {
 	text-align: center;
+	z-index: 4;
 }
 
 .o-items li {
