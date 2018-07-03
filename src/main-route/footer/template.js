@@ -8,7 +8,7 @@ import colombianFlag from '../../../yo-svgs/colombian-flag'
 import americanFlag from '../../../yo-svgs/american-flag'
 
 export default yo`
-    <footer class="f-container bord" o-s="off">
+    <footer class="f-container bord">
       <div class="f-social l-margin">
         <a href="https://github.com/StevenAnaya" class="f-icon" target="_blank">${githubIcon}</a>
         <a href="https://www.behance.net/stvanaya50fe" class="f-icon" target="_blank">${facebookIcon}</a>

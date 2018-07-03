@@ -1,1 +1,65 @@
-<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2097.13 1179.64"><defs><style>.cls-1{fill:url(#Degradado_sin_nombre_56);}</style><linearGradient id="Degradado_sin_nombre_56" x1="-1693.52" y1="253.5" x2="2247.78" y2="253.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ac1f17"/><stop offset="1" stop-color="#0c102e"/></linearGradient></defs><title>oc-background</title><g id="Logo"><path class="cls-1" d="M-1533.6-1247.92c29.49,7.06-25.5,812.6,288.75,1098.58C-891.9,171.86,27.27-956.75,456.82-683.78S836,230.31,1150.27,190.68,1880.32-333.43,2176.72-45.8,1799.49,1398.58,948.92,1691.66C-5.65,2020.58,79.66,971.11,90,772.39,102.07,540,115.73,164.6-188.43,164.44c-282-.15-738.33,331.12-987.73,296-265.29-37.4-479.64-256-512.83-762.73S-1563.09-1255-1533.6-1247.92Z"/></g></svg>
+<svg version="1.1" id="circle-pattern" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 2097.134 1179.638" style="enable-background:new 0 0 2097.134 1179.638;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#circle-fade_6_);}
+	.st1{fill:url(#circle-fade_11_);}
+	.st2{fill:url(#circle-fade_12_);}
+	.st3{fill:url(#circle-fade_13_);}
+	.st4{fill:url(#circle-fade_14_);}
+	.st5{fill:url(#circle-fade_15_);}
+	.st6{fill:url(#circle-fade_16_);}
+	.st7{fill:url(#circle-fade_17_);}
+	.st8{fill:url(#circle-fade_18_);}
+	.st9{fill:url(#circle-fade_19_);}
+</style>
+<linearGradient id="circle-fade_6_" gradientUnits="userSpaceOnUse" x1="500.8715" y1="890.303" x2="605.1285" y2="953.697">
+	<stop  offset="0" style="stop-color:#AC1F17"/>
+	<stop  offset="1" style="stop-color:#0C102E"/>
+</linearGradient>
+<circle id="circle-fade_10_" class="st0" cx="553" cy="922" r="61"/>
+<linearGradient id="circle-fade_11_" gradientUnits="userSpaceOnUse" x1="724.8715" y1="139.3029" x2="829.1285" y2="202.6971">
+	<stop  offset="0" style="stop-color:#AC1F17"/>
+	<stop  offset="1" style="stop-color:#0C102E"/>
+</linearGradient>
+<circle id="circle-fade_9_" class="st1" cx="777" cy="171" r="61"/>
+<linearGradient id="circle-fade_12_" gradientUnits="userSpaceOnUse" x1="1578.8715" y1="619.303" x2="1683.1285" y2="682.697">
+	<stop  offset="0" style="stop-color:#AC1F17"/>
+	<stop  offset="1" style="stop-color:#0C102E"/>
+</linearGradient>
+<circle id="circle-fade_8_" class="st2" cx="1631" cy="651" r="61"/>
+<linearGradient id="circle-fade_13_" gradientUnits="userSpaceOnUse" x1="1223.8715" y1="1070.303" x2="1328.1285" y2="1133.697">
+	<stop  offset="0" style="stop-color:#AC1F17"/>
+	<stop  offset="1" style="stop-color:#0C102E"/>
+</linearGradient>
+<circle id="circle-fade_7_" class="st3" cx="1276" cy="1102" r="61"/>
+<linearGradient id="circle-fade_14_" gradientUnits="userSpaceOnUse" x1="1973.6561" y1="931.7142" x2="2142.344" y2="1034.2858">
+	<stop  offset="0" style="stop-color:#AC1F17"/>
+	<stop  offset="1" style="stop-color:#0C102E"/>
+</linearGradient>
+<circle id="circle-fade_5_" class="st4" cx="2058" cy="983" r="98.698"/>
+<linearGradient id="circle-fade_15_" gradientUnits="userSpaceOnUse" x1="1563.6561" y1="56.7142" x2="1732.3439" y2="159.2858">
+	<stop  offset="0" style="stop-color:#AC1F17"/>
+	<stop  offset="1" style="stop-color:#0C102E"/>
+</linearGradient>
+<circle id="circle-fade_4_" class="st5" cx="1648" cy="108" r="98.698"/>
+<linearGradient id="circle-fade_16_" gradientUnits="userSpaceOnUse" x1="257.6561" y1="86.7142" x2="426.3439" y2="189.2858">
+	<stop  offset="0" style="stop-color:#AC1F17"/>
+	<stop  offset="1" style="stop-color:#0C102E"/>
+</linearGradient>
+<circle id="circle-fade_3_" class="st6" cx="342" cy="138" r="98.698"/>
+<linearGradient id="circle-fade_17_" gradientUnits="userSpaceOnUse" x1="-21.3439" y1="561.7142" x2="147.3439" y2="664.2858">
+	<stop  offset="0" style="stop-color:#AC1F17"/>
+	<stop  offset="1" style="stop-color:#0C102E"/>
+</linearGradient>
+<circle id="circle-fade_2_" class="st7" cx="63" cy="613" r="98.698"/>
+<linearGradient id="circle-fade_18_" gradientUnits="userSpaceOnUse" x1="2012.6561" y1="358.7142" x2="2181.344" y2="461.2858">
+	<stop  offset="0" style="stop-color:#AC1F17"/>
+	<stop  offset="1" style="stop-color:#0C102E"/>
+</linearGradient>
+<circle id="circle-fade_1_" class="st8" cx="2097" cy="410" r="98.698"/>
+<linearGradient id="circle-fade_19_" gradientUnits="userSpaceOnUse" x1="-73.4684" y1="1080.0195" x2="199.4684" y2="1245.9805">
+	<stop  offset="0" style="stop-color:#AC1F17"/>
+	<stop  offset="1" style="stop-color:#0C102E"/>
+</linearGradient>
+<circle id="circle-fade" class="st9" cx="63" cy="1163" r="159.693"/>
+</svg>
