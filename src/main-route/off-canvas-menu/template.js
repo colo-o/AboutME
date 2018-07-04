@@ -9,9 +9,9 @@ export default yo`
     ${ocBackground}
   </div>
   <div class="o-items">
-    <li nav-pos="home">inicio</li>
-    <li nav-pos="design">diseno grafico</li>
-    <li nav-pos="develop">desarrollo web</li>
-    <li nav-pos="gaming">video juegos</li>
+    <li class="underline" nav-pos="home">inicio</li>
+    <li class="underline" nav-pos="design">diseño grafico</li>
+    <li class="underline" nav-pos="develop">desarrollo web</li>
+    <li class="underline" nav-pos="gaming">video juegos</li>
   </div>
 </section>`

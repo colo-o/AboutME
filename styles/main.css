@@ -89,10 +89,6 @@ li {
 	z-index: 13;
 }
 
-.h-item-clicked {
-	background-color: var(--bg-black-color) !important;
-}
-
 .h-animation-box {
 	width: 54px;
 	height: 30px;
@@ -186,10 +182,8 @@ li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* top: -100%; */
-	/* opacity: 0; */
 	z-index: 12;
-	background: var(--bg-blue-color);
+	background: linear-gradient(to bottom right, var(--bg-red-color), var(--bg-blue-color));
 	overflow: hidden;
 	will-change: height;
 	transition: .8s;
@@ -204,7 +198,6 @@ li {
 
 .is-v-active {
 	height: 100%;
-	/* opacity: 1; */
 }
 
 .o-background {
@@ -225,6 +218,7 @@ li {
 #circle-fade_3_ {
 	animation-name: oc-animation-2;
 	animation-duration: 6s;
+	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
 	animation-delay: 2s;
@@ -234,6 +228,7 @@ li {
 #circle-fade_5_ {
 	animation-name: oc-animation-1;
 	animation-duration: 6s;
+	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
 }
@@ -242,6 +237,7 @@ li {
 #circle-fade_9_ {
 	animation-name: oc-animation-3;
 	animation-duration: 6s;
+	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
 	animation-delay: 5s;
@@ -250,6 +246,7 @@ li {
 #circle-fade_10_ {
 	animation-name: oc-animation-4;
 	animation-duration: 6s;
+	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
 	animation-delay: 4s;
@@ -258,6 +255,7 @@ li {
 #circle-fade_7_ {
 	animation-name: oc-animation-5;
 	animation-duration: 6s;
+	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
 	animation-delay: 2s;
@@ -266,6 +264,7 @@ li {
 #circle-fade_8_ {
 	animation-name: oc-animation-6;
 	animation-duration: 6s;
+	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
 	animation-delay: 3s;
@@ -274,6 +273,21 @@ li {
 .o-items {
 	text-align: center;
 	z-index: 4;
+	transition: .6s;
+	-webkit-transition: .6s;
+	-moz-transition: .6s;
+	transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-moz-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-o-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	transform: scale(.2);
+	will-change: transform;
+	opacity: 0;
+}
+
+.show-items {
+	transform: scale(1);
+	opacity: 1;
 }
 
 .o-items li {
@@ -285,11 +299,76 @@ li {
 	color: var(--bg-white-color);
 	opacity: .7;
 	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-moz-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-o-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+}
+
+.underline {
+	position: relative;
 }
 
 .o-items li:hover {
 	opacity: 1;
-	border-bottom: 1px solid var(--bg-white-color);
+}
+
+.o-items li::after {
+	content: '';
+	width: 90px;
+	height: 1px;
+	background: var(--bg-white-color);
+	transition: .4s;
+	position: absolute;
+	bottom: 0px;
+	left: calc(40% - 6px);
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-moz-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-o-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	transform: scaleX(0);
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	-o-transform: scaleX(0);
+	will-change: transform;
+}
+
+.o-items li:nth-of-type(2):after,
+.o-items li:nth-of-type(3):after,
+.o-items li:nth-of-type(4):after {
+	content: '';
+	width: 67%;
+	height: 1px;
+	background: var(--bg-white-color);
+	transition: .4s;
+	position: absolute;
+	bottom: 0px;
+	left: calc(50% - 33%);
+	transition: .4s;
+	transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-moz-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-o-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	transform: scaleX(0);
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	-o-transform: scaleX(0);
+	will-change: transform;
+}
+
+.o-items li:hover::after {
+	transform: scaleX(1);
+	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	-o-transform: scaleX(1);
 }
 
 .o-items li:last-child {
