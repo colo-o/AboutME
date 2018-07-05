@@ -52,7 +52,7 @@ p {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-size: 21px;
+	font-size: 16px;
 }
 
 li {
@@ -631,8 +631,8 @@ li {
 	height: 100%;
 	display: -ms-grid;
 	display: grid;
-	grid-template: 60px 15% repeat(2, auto) / 60% 40%;
-	grid-gap: 10px 30px;
+	grid-template: 60px 15% repeat(2, auto) / 35% 45%;
+	grid-gap: 10px 18%;
 	background: var(--bg-white-color);
 	position: fixed;
 	top: 100%;
@@ -645,7 +645,7 @@ li {
 	-webkit-transition-timing-function: cubic-bezier(.75,0,.54,.83);
 	-moz-transition-timing-function: cubic-bezier(.75,0,.54,.83);
 	-o-transition-timing-function: cubic-bezier(.75,0,.54,.83);
-	padding: 0 45px;
+	padding: 0 10%;
 	box-shadow: 3px 8px 15px 0px;
 	overflow-y: scroll;
 	will-change: top;
