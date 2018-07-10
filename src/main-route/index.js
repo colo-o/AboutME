@@ -7,7 +7,7 @@ import './animations/secret-card/card-events'
 import './animations/menu-button/menu-events'
 import './animations/menu-navigation/items-events'
 
-page('/', function () {
+page('/', () => {
   let main = document.getElementById('sz')
   main.insertBefore(template, main.childNodes[0])
 })
