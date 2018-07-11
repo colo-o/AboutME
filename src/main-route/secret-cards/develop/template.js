@@ -33,24 +33,29 @@ export default yo`
     fundamentales en mi diario vivir de desarrollador. Cuando trabajamos bajo estas
     premisas nuestro entorno de trabajo se ve beneficiado potenciando nuestro talento
     humano y técnico.</p>
-    <p class="black">No olvides que una identidad de marca eficiente integra todos los 
-    elementos de la marca dentro de un mensaje coherente que diferencia y destaca entre 
-    el resto. Nunca descartes la parte más discreta pero visible de tu marca porque 
-    la primera impresión es la que vende.</p>
-    <q><i>El diseño es el embajador silencioso de tu marca. - Paul Rand</i></q>
+    <h5 class="black">Alta concurrencia y otras cositas</h5>
+    <p class="black">Hoy en día es fundamental crear aplicaciones altamente escalables 
+    debido a que los productos tecnológicos tienden cada vez a crecer abismalmente con
+    el paso del tiempo. NodeJS y un stack JavaScript me permiten crear aplicaciones 
+    con un gran soporte a grandes cantidades de peticiones, con una estructura basada en 
+    componentes, características totalmente en tiempo real y una arquitectura basada 
+    en eventos.
+    </p>
   </div>
   <div class="c-right-s c-right-mrgn">
-    <h5 class="black">Algo llamado UX y UI</h5>
-    <p class="black">UX (Experiencia de Usuario), en este caso, lo que pretende es enfocar
-    los esfuerzos del diseño de un producto digital hacia el entendimiento de los diferentes
-    tipos de usuario. Crear una aplicación basada en el usuario y sus necesidades.</p>
-    <p class="black">UX me permite crear experiencias confortantes, coherentes y resolutivas 
-    frente a una necesidad especifica dejando como resultado un incremento en las conexiones 
-    que existen entre tu producto o servicio y tus usuarios.</p>
-    <p class="black">Pasando al otro tema. UI (Interfaz de Usuario) es la interfaz de un producto
-    que en la práctica esta intimamente relacionado con la UX, esta forma parte de esa experiencia
-    de uso y es aquí donde las habilidades en investigación de necesidades centradas en el usuario
-    nos dan el camino a seguir en la construcción gráfica de la interfaz.</p>
-    <q><i>Una interfaz es como un chiste: si la tienes que explicar es porque es mala. - Juani Ruiz Echazú</i></q>
+    <h5 class="black">No más Bootstrap, solo CSS</h5>
+    <p class="black">Hace tiempo atrás no me se me pasaba nada más que Bootstrap o cualquier 
+    otra libreria Frontend para diseñar mis paginas web, pero afortunadamente, me capacité en
+    lo que ha sido la mejor herramienta en todo lo que lleva CSS existiendo; CSS Grids revolucionó
+    completamente la industria del diseño web y yo no iba a quedar fuera de esto. Ahora con esta 
+    gran herramienta puedo diseñar increíbles, dinámicas y complejas grillas que se adaptan a 
+    cualquier tipo de dispositivo, ¡Solo con CSS!.</p>
+    <h5 class="black">Pequeños detalles que enamoran</h5>
+    <p class="black">Los seres humanos somos increbles amantes de los pequeños detalles en cualquier 
+    cosa que vemos y claro el diseño web no iba a ser la excepción. Las animaciones me permiten implementar
+    experiencias agradables que fortifican el lazo que tienen los usuarios con el producto, sin importar el grado,
+    desde lo más simple hasta lo más complejo, una animación siempre será un gran aliado para transmitir emociones
+    con tu producto.</p>
+    <q><i>La emoción queda en la memoria. Sé fácil de recordar.</i></q>
   </div>
 </section>`
