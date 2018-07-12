@@ -32,18 +32,18 @@ export default yo`
     al pasar los años y sería ingrato no devolverle un poco de lo mucho que me han aportado,
     aunque sea por este medio.</p>
     <p class="black">Una parte significativa de mis recuerdos se los debo a los videojuegos
-    porque evocaron en mi una cantidad inimaginable de sentimientos, que como se espera, la mayoria
+    porque evocaron en mi una cantidad inimaginable de sentimientos, que como se espera, la mayoría
     son gratos y positivos. Además, para no dejar nada atrás, me siento en deber de darle mención 
     a grandes titulos como Super Mario World, Donkey Kong, Twisted Metal, Battlefield, Call Of Duty
     , Crash Saga, Halo, Dante's Inferno, Grand Theft Auto, Mortal Kombat, Resident Evil, Tomb Raider y
     algunos que por cuestión de memoria, más que otra cosa, no aparecen aquí.</p>
-    <h5 class="black">Un proposito deseado</h5>
-    <p class="black">Hoy en día es fundamental crear aplicaciones altamente escalables 
-    debido a que los productos tecnológicos tienden cada vez a crecer abismalmente con
-    el paso del tiempo. NodeJS y un stack JavaScript me permiten crear aplicaciones 
-    con un gran soporte a grandes cantidades de peticiones, con una estructura basada en 
-    componentes, características totalmente en tiempo real y una arquitectura basada 
-    en eventos.
-    </p>
+  </div>
+  <div class="c-right-s c-right-mrgn">
+    <h5 class="black">Un propósito deseado</h5>
+    <p class="black">En un principio supe que los videojuegos requerían un montón de habilidades
+    no solo técnicas, sino también artisticas, que avivaron un profundo interés por la creación de
+    videojuegos. Hoy tengo puesto en mi lista de "Cosas increíbles por hacer", convertirme en un 
+    desarrollador de videojuegos en donde siento que puedo explotar todo lo que me ha traído 
+    mi proceso de aprendizaje autodidacta.</p>
   </div>
 </section>`

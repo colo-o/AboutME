@@ -222,76 +222,6 @@ li {
 	height: 100%;
 }
 
-.o-background {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.o-background svg {
-	width: 100%;
-	height: 100%;
-	opacity: .1;
-}
-
-#circle-fade_1_,
-#circle-fade_3_ {
-	animation-name: oc-animation-2;
-	animation-duration: 6s;
-	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-delay: 2s;
-}
-
-#circle-fade,
-#circle-fade_5_ {
-	animation-name: oc-animation-1;
-	animation-duration: 6s;
-	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-}
-
-#circle-fade_2_ ,
-#circle-fade_9_ {
-	animation-name: oc-animation-3;
-	animation-duration: 6s;
-	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-delay: 5s;
-}
-
-#circle-fade_10_ {
-	animation-name: oc-animation-4;
-	animation-duration: 6s;
-	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-delay: 4s;
-}
-
-#circle-fade_7_ {
-	animation-name: oc-animation-5;
-	animation-duration: 6s;
-	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-delay: 2s;
-}
-
-#circle-fade_8_ {
-	animation-name: oc-animation-6;
-	animation-duration: 6s;
-	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-delay: 3s;
-}
-
 .o-items {
 	text-align: center;
 	z-index: 4;
@@ -626,6 +556,7 @@ li {
 .mc-container-title {
 	width: 40%;
 	margin-left: 18%;
+	opacity: 0;
 }
 
 .mc-title {
@@ -634,6 +565,20 @@ li {
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: antialiased;
+}
+
+.mc-title-af {
+	animation-name: mc-title-animation-f;
+	animation-duration: 1.7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+}
+
+.mc-title-ar {
+	animation-name: mc-title-animation-r;
+	animation-duration: 1.7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
 }
 
 .svg-hl {
@@ -956,89 +901,42 @@ li {
 	}
 }
 
-@keyframes oc-animation-1 {
+@keyframes mc-title-animation-f {
 	from {
+		transform: translateX(200px);
 	} to {
-		transform: translate(-15px, 40px);
+		transform: translateX(0px);
+		opacity: 1;
 	}
 }
 /* Saphari */
-@-webkit-keyframes oc-animation-1 {
+@-webkit-keyframes mc-title-animation-f {
 	from {
+		transform: translateX(200px);
 	} to {
-		transform: translate(-15px, 40px);
+		transform: translateX(0px);
+		opacity: 1;
 	}
 }
 
-@keyframes oc-animation-2 {
+@keyframes mc-title-animation-r {
 	from {
+		transform: translateX(-200px);
 	} to {
-		transform: translate(40px, -25px);
+		transform: translateX(0px);
+		opacity: 1;
 	}
 }
 /* Saphari */
-@-webkit-keyframes oc-animation-2 {
+@-webkit-keyframes mc-title-animation-r {
 	from {
+		transform: translateX(-200px);
 	} to {
-		transform: translate(40px, -25px);
+		transform: translateX(0px);
+		opacity: 1;
 	}
 }
 
-@keyframes oc-animation-3 {
-	from {
-	} to {
-		transform: translate(25px, 0);
-	}
-}
-/* Saphari */
-@-webkit-keyframes oc-animation-3 {
-	from {
-	} to {
-		transform: translate(25px, 0);
-	}
-}
-
-@keyframes oc-animation-4 {
-	from {
-	} to {
-		transform: translate(25px, -18px);
-	}
-}
-/* Saphari */
-@-webkit-keyframes oc-animation-4 {
-	from {
-	} to {
-		transform: translate(25px, -18px);
-	}
-}
-
-@keyframes oc-animation-5 {
-	from {
-	} to {
-		transform: translate(-25px, 20px);
-	}
-}
-/* Saphari */
-@-webkit-keyframes oc-animation-5 {
-	from {
-	} to {
-		transform: translate(-25px, 20px);
-	}
-}
-
-@keyframes oc-animation-6 {
-	from {
-	} to {
-		transform: translate(-18px, -25px);
-	}
-}
-/* Saphari */
-@-webkit-keyframes oc-animation-6 {
-	from {
-	} to {
-		transform: translate(-18px, -25px);
-	}
-}
 
 /* Mediaquerie's Breakpoints */
 

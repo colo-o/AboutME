@@ -102,4 +102,22 @@ export default class {
     let targetSlide = $(`article.mc-panel.mc-${targetString} div:last-child`)
     targetSlide.toggleClass('active')
   }
+
+  animateContent (targetString, isForward) {
+    let $target = $(`.mc-panel.mc-${targetString} .mc-container-title`)
+    // let $current = $(`.mc-panel.mc-${currentSlide} .mc-container-title`)
+    if (isForward) {
+      $target.hasClass('mc-title-af') ? $target.removeClass('mc-title-af') : false
+      $target.hasClass('mc-title-ar') ? $target.removeClass('mc-title-ar') : false
+      setTimeout(() => {
+        $target.hasClass('mc-title-af') ? false : $target.addClass('mc-title-af')
+      }, 0)
+    } else{
+      $target.hasClass('mc-title-ar') ? $target.removeClass('mc-title-ar') : false
+      $target.hasClass('mc-title-af') ? $target.removeClass('mc-title-af') : false
+      setTimeout(() => {
+        $target.hasClass('mc-title-ar') ? false : $target.addClass('mc-title-ar')
+      }, 0)
+    }
+  }
 }
