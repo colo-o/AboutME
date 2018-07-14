@@ -105,7 +105,6 @@ export default class {
 
   animateContent (targetString, isForward) {
     let $target = $(`.mc-panel.mc-${targetString} .mc-container-title`)
-    // let $current = $(`.mc-panel.mc-${currentSlide} .mc-container-title`)
     if (isForward) {
       $target.hasClass('mc-title-af') ? $target.removeClass('mc-title-af') : false
       $target.hasClass('mc-title-ar') ? $target.removeClass('mc-title-ar') : false

@@ -10,6 +10,7 @@ export default function menuPipe (currentPosition, navPos) {
   let { targets, isForward } = SlideAnimIns.multipleMoveTargets(currentPosition, navPos)
   if (targets) {
     SlideAnimIns.animationMove(targets, currentPosition, isForward, navPos)
+    SlideAnimIns.animateContent(navPos, isForward)
     isHideButton(navPos)
     toggleCard(currentPosition)
   }
