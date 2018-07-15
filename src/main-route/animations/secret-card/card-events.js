@@ -1,7 +1,7 @@
 'use strict'
 
 $().ready(function () {
-  $('#btn-trigger').click(function () {
+  $('#secret').click(function () {
     let $currentSlide = $('#trg').attr('current-pos')
     let $currentCard = $(`section.c-container.c-${$currentSlide}`)
 

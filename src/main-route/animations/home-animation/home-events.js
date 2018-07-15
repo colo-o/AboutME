@@ -1,15 +1,13 @@
 'use strict'
 
 $().ready(function() {
-	// $('.y-wrap').css({
-	// 	opacity: "1"
-	// })
-	setTimeout(() => {
+		setTimeout(() => {
 		$('.c-f').addClass('c-f-off')
 		$('.c-s').addClass('c-s-off')
+		$('.mc-home .mc-container-title').addClass('mc-title-af')
 
 		$('#h').addClass('h-on')
 		$('#trg').addClass('sb-on')
 		$('#fo').addClass('f-on')
-	}, 1000);
+	}, 2000);
 })

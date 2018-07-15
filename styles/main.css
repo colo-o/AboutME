@@ -568,11 +568,28 @@ li {
 }
 
 .mc-home{
-	background: var(--bg-red-color) url('./assets/home-1.jpg') center;
+	background: var(--bg-red-color) url('./assets/home-2.jpg') center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	top: 0;
 	left: -100% ;
+}
+
+.mc-logo {
+	position: fixed;
+	width: 30%;
+	top: 40%;
+	left: 40%;
+	z-index: 21;
+}
+
+#isotipo {
+	opacity: 0;
+	animation-name: home-iso-animation;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: 2;
+	animation-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
 }
 
 .mc-design {
@@ -612,6 +629,11 @@ li {
 	top: 0;
 	left: 0;
 	z-index: -1;
+	background: rgba(0,0,0, .5);
+}
+
+.mc-gaming .mc-overlay,
+.mc-develop .mc-overlay {
 	background: rgba(0,0,0, .3);
 }
 
@@ -794,10 +816,14 @@ li {
 	margin-left: 29%;
 }
 
+#secret {
+	cursor: pointer;
+}
+
 .c-button-container {
 	position: fixed;
-	top: 82%;
-	left: 20%;
+	top: 78%;
+	left: 25%;
 	transition: .5s;
 	display: inline-flex;
 	align-items: center;
@@ -819,7 +845,6 @@ li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	cursor: pointer;
 }
 
 .c-button-a {
@@ -835,12 +860,9 @@ li {
 	-o-animation: card-btn-ext 1.5s cubic-bezier(.77, .36, .64, .97) infinite alternate;
 }
 
-.c-button-advice {
-	margin-left: 5px;
-}
-
 .c-button-advice p {
-	font-size: 14px;
+	margin-left: 5px;
+	font-size: .95rem;
 	color: var(--bg-white-color);
 }
 
@@ -999,6 +1021,22 @@ li {
 		transform: translateX(-200px);
 	} to {
 		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes home-iso-animation {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+/* Saphari */
+@-webkit-keyframes home-iso-animation {
+	from {
+		opacity: 0;
+	} to {
 		opacity: 1;
 	}
 }
