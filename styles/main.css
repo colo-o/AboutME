@@ -93,6 +93,7 @@ li {
 	height: 10%;
 	position: fixed;
 	top: -10%;
+	opacity: 0;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -109,6 +110,7 @@ li {
 
 .h-on {
 	top: 4%;
+	opacity: 1;
 }
 
 .h-clicked {
@@ -337,6 +339,7 @@ li {
 	position: fixed;
 	left: 0;
 	top: -10%;
+	opacity: 0;
 	display: flex;
 	justify-content: space-between;
 	z-index: 10;
@@ -352,6 +355,7 @@ li {
 
 .sb-on {
 	top: 47%;
+	opacity: 1;
 }
 
 .sb-container[current-pos=home] #backward {
@@ -787,12 +791,10 @@ li {
 
 .c-right-f {
 	grid-area: 3 / 2 / 4 / 3;
-	/* margin-top: 25%; */
 }
 
 .c-right-s {
 	grid-area: 4 / 2 / 5 / 3;
-	/* margin-top: 25%; */
 }
 
 .c-right-f p, 
@@ -822,20 +824,24 @@ li {
 
 .c-button-container {
 	position: fixed;
-	top: 78%;
+	top: -10%;
 	left: 25%;
-	transition: .5s;
+	opacity: 0;
 	display: inline-flex;
 	align-items: center;
+	transition: 1.3s;
+	-webkit-transition: 1.3s;
+	-moz-transition: 1.3s;
+	-o-transition: 1.3s;
+	transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-moz-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
+	-o-transition-timing-function: cubic-bezier(0.75, 0, 0.54, 0.83);
 }
 
-.card-is-hide {
-	pointer-events: none;
-	opacity: 0;
-	transform: scale(.4);
-	-webkit-transform: scale(.4);
-	-ms-transform: scale(.4);
-	-moz-transform: scale(.4);
+.cb-on {
+	top: 78%;
+	opacity: 1;
 }
 
 .c-button-wrap {
@@ -862,7 +868,7 @@ li {
 
 .c-button-advice p {
 	margin-left: 5px;
-	font-size: .95rem;
+	font-size: 1rem;
 	color: var(--bg-white-color);
 }
 
@@ -872,6 +878,7 @@ li {
 	position: fixed;
 	left: 0;
 	top: -10%;
+	opacity: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -888,6 +895,7 @@ li {
 
 .f-on {
 	top: 90%;
+	opacity: 1;
 }
 
 .f-active {

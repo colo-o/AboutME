@@ -3,7 +3,7 @@
 import yo from 'yo-yo'
 
 export default yo`
-    <section id="secret" class="c-button-container card-is-hide">
+    <section id="secret" class="c-button-container">
       <div id="btn-trigger" class="c-button-wrap">
         <div class="c-button-a"></div>
       </div>

@@ -9,5 +9,6 @@ $().ready(function() {
 		$('#h').addClass('h-on')
 		$('#trg').addClass('sb-on')
 		$('#fo').addClass('f-on')
+		$('#secret').addClass('cb-on')
 	}, 2000);
 })

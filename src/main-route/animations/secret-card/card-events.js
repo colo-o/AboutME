@@ -8,6 +8,12 @@ $().ready(function () {
     $currentCard.toggleClass('is-visible')
   })
 
+  $('#tg-card-home').click(function () {
+    let $currentCard = $('section.c-container.c-home')
+
+    $currentCard.toggleClass('is-visible')
+  })
+
   $('#tg-card-des').click(function () {
     let $currentCard = $('section.c-container.c-design')
 
