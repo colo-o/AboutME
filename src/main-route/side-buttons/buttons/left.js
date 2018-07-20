@@ -6,6 +6,5 @@ export default yo`
 	<div id="backward" class="sb-button l-margin bord">
 		<div></div>
 		<div></div>
-		<div></div>
 	</div>
 `

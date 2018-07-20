@@ -7,5 +7,5 @@ export default yo`
       <div id="btn-trigger" class="c-button-wrap">
         <div class="c-button-a"></div>
       </div>
-      <div class="c-button-advice"><p>Toca para aprender un poquito mas de mi.</p></div>
+      <div class="c-button-advice"><p>Toca para aprender un poquito más de mi.</p></div>
     </section>`

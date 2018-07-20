@@ -6,6 +6,5 @@ export default yo`
 	<div id="forward" class="sb-button r-margin bord">
 		<div></div>
 		<div></div>
-		<div></div>
 	</div>
 `
