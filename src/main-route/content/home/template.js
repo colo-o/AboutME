@@ -1,14 +1,10 @@
 'use strict'
 
 import yo from 'yo-yo'
-import logo from '../../../../yo-svgs/logo'
 
 export default yo`
     <article class="mc-panel mc-home is-s-visible">
       <div class="mc-overlay"></div>
-      <div class="mc-logo">
-        ${logo}
-      </div>
       <div class="c-f"></div>
       <div class="c-s"></div>
       <section class="mc-container-title">

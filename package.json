@@ -27,6 +27,8 @@
   "dependencies": {
     "empty-element": "^1.0.0",
     "express": "^4.16.3",
+    "intl": "^1.2.5",
+    "intl-messageformat": "^2.2.0",
     "page": "^1.8.6",
     "pug": "^2.0.3",
     "yo-yo": "^1.4.1"

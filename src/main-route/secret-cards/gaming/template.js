@@ -1,6 +1,7 @@
 'use strict'
 
 import yo from 'yo-yo'
+import translate from '../../translate/translate'
 
 export default yo`
 <section class="c-container c-gaming is-hidden bord">
@@ -9,41 +10,28 @@ export default yo`
     <div class="c-close-s"></div>
   </div>
   <div class="c-title-container">
-    <h1 class="c-title black">video juegos</h1>
+    <h1 class="c-title black">${translate.message('gamingCardTitle')}</h1>
   </div>
   <div class="c-left-f c-left-mrgn bord">
-    <h4 class="red">Géneros</h4>
-    <p class="black">Acción</p>
-    <p class="black">Aventura</p>
+    <h4 class="red">${translate.message('genre')}</h4>
+    <p class="black">${translate.message('cardGenreAct')}</p>
+    <p class="black">${translate.message('cardGenreAdv')}</p>
     <p class="black">FPS</p>
-    <p class="black">Deportes</p>
-    <p class="black">Horror de supervivencia</p>
+    <p class="black">${translate.message('cardGenreSpo')}</p>
+    <p class="black">${translate.message('cardGenreHor')}</p>
   </div>
   <div class="c-left-s c-left-mrgn bord">
-    <h3 class="black">Asombroso</h3>
-    <h3 class="black">Mágico</h3>
-    <h3 class="black">Divertido</h3>
+    <h3 class="black">${translate.message('cardAmazing')}</h3>
+    <h3 class="black">${translate.message('cardMagic')}</h3>
+    <h3 class="black">${translate.message('cardFunny')}</h3>
   </div>
   <div class="c-right-f c-right-mrgn">
-    <h5 class="black">Más que solo "Muñequitos"</h5>
-    <p class="black">Los videojuegos forman parte de la vida de algunas personas como 
-    una necesidad de poder imaginar, sentir, vivir y recordar experiencias que dificilmente
-    se dan en la vida diaria. Yo crecí envuelto de grandes experiencias que fueron mejorando
-    al pasar los años y sería ingrato no devolverle un poco de lo mucho que me han aportado,
-    aunque sea por este medio.</p>
-    <p class="black">Una parte significativa de mis recuerdos se los debo a los videojuegos
-    porque evocaron en mi una cantidad inimaginable de sentimientos, que como se espera, la mayoría
-    son gratos y positivos. Además, para no dejar nada atrás, me siento en deber de darle mención 
-    a grandes titulos como Super Mario World, Donkey Kong, Twisted Metal, Battlefield, Call Of Duty
-    , Crash Saga, Halo, Dante's Inferno, Grand Theft Auto, Mortal Kombat, Resident Evil, Tomb Raider y
-    algunos que por cuestión de memoria, más que otra cosa, no aparecen aquí.</p>
+    <h5 class="black">${translate.message('cardGamingInt')}</h5>
+    <p class="black">${translate.message('cardGamingIntTextF')}</p>
+    <p class="black">${translate.message('cardGamingIntTextS')}</p>
   </div>
   <div class="c-right-s c-right-mrgn">
-    <h5 class="black">Un propósito deseado</h5>
-    <p class="black">En un principio supe que los videojuegos requerían un montón de habilidades
-    no solo técnicas, sino también artisticas, que avivaron un profundo interés por la creación de
-    videojuegos. Hoy tengo puesto en mi lista de "Cosas increíbles por hacer", convertirme en un 
-    desarrollador de videojuegos en donde siento que puedo explotar todo lo que me ha traído 
-    mi proceso de aprendizaje autodidacta.</p>
+    <h5 class="black">${translate.message('cardGamingLast')}</h5>
+    <p class="black">${translate.message('cardGamingLastText')}</p>
   </div>
 </section>`
